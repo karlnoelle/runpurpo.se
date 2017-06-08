@@ -23,7 +23,9 @@ import main from './main/main.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
 
-import eventsModule from './events/events.component';
+import eventsModule from '../components/events/events.component';
+import eventDetailsModule from '../components/eventDetails/eventDetails.component';
+import CreateEventComponent from '../components/createEvent/createEvent.component';
 
 import './app.scss';
 
@@ -44,6 +46,8 @@ angular.module('runpurposeApp', [
   constants,
 
   eventsModule,
+  eventDetailsModule,
+  CreateEventComponent,
 
   util
 ])

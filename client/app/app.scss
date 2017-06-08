@@ -35,8 +35,10 @@ footer {
 // Component styles are injected through gulp
 /* inject:scss */
 @import 'admin/admin';
-@import 'events/events';
 @import 'main/main';
+@import '../components/createEvent/createEvent';
+@import '../components/eventDetails/eventDetails';
+@import '../components/events/events';
 @import '../components/footer/footer';
 @import '../components/modal/modal';
 @import '../components/oauth-buttons/oauth-buttons';
