@@ -16,3 +16,19 @@
 .navbar-text {
   margin-left: 15px;
 }
+
+.homepage {
+  ul {
+    li {
+      list-style-type: none;
+      margin: 1em 0;
+      a {
+        padding: 1em 2em;
+        &:hover {
+          background-color: #f3f3f3;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
