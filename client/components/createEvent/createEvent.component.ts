@@ -6,6 +6,7 @@ const ngRoute = require('angular-route');
 import routes from './createEvent.routes';
 
 export class CreateEventComponent {
+  message: string;
   /*@ngInject*/
   constructor() {
     this.message = 'Hello';
