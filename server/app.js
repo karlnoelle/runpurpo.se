@@ -40,13 +40,6 @@ exports = module.exports = app;
 /*
 // passportjs Authentication Stuff
 
-var logger = require('morgan');
-app.use(logger);
-
-var passport = require('passport');
-// var authConfig = require('../../server/auth/oauth.js');
-var FacebookStrategy = require('passport-facebook').Strategy;
-
 // serialize and deserialize
 passport.serializeUser(function(user, done) {
   done(null, user);
@@ -54,19 +47,6 @@ passport.serializeUser(function(user, done) {
 passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
-
-// config
-passport.use(new FacebookStrategy({
-  clientID: config.facebook.clientID,
-  clientSecret: config.facebook.clientSecret,
-  callbackURL: config.facebook.callbackURL
-},
-  function(accessToken, refreshToken, profile, done) {
-    process.nextTick(function() {
-      return done(null, profile);
-    });
-  }
-));
 
 var path = require("path");
 
