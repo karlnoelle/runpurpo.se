@@ -147,7 +147,7 @@
     "test": "gulp test",
     "postinstall": "./node_modules/.bin/typings install",
     "update-webdriver": "node node_modules/protractor/bin/webdriver-manager update",
-    "start": "node server"
+    "start": "NODE_ENV=development node server"
   },
   "private": true
 }
