@@ -8,9 +8,5 @@ public
 client/bower_components
 client/index.html
 dist
-/server/config/local.env.js
 npm-debug.log
 coverage
-/server/auth/oauth.js
-/server/config/environment/index.js
-/server/config/local.env.sample.js
