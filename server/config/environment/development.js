@@ -7,7 +7,7 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://karlnoelle:goteuro87@ds121192.mlab.com:21192/heroku_h1wdx9nf'
+    uri: 'mongodb://heroku_h1wdx9nf:ejn11ei1vi9qpjm83a3meuueli@ds121192.mlab.com:21192/heroku_h1wdx9nf'
   },
 
   // Seed database on startup
