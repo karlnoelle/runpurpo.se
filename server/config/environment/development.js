@@ -7,7 +7,7 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/runpurpose-dev'
+    uri: 'mongodb://karlnoelle:goteuro87@ds121192.mlab.com:21192/heroku_h1wdx9nf'
   },
 
   // Seed database on startup
