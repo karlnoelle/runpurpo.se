@@ -1,1 +1,1 @@
-web: npm start --optimize_for_size --max_old_space_size=128 --gc_interval=50
+web: npm start --optimize_for_size --max_old_space_size=430 --max_executable_size=64 --gc_interval=100 --always_compact --use_idle_notification
