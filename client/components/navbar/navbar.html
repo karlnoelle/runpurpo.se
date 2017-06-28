@@ -17,8 +17,7 @@
         <li ng-hide="$ctrl.isLoggedIn()" ng-class="{active: $ctrl.isActive('/signup')}"><a href="/signup">Sign up</a></li>
         <li ng-hide="$ctrl.isLoggedIn()" ng-class="{active: $ctrl.isActive('/login')}"><a href="/login">Login</a></li>
         <li ng-show="$ctrl.isAdmin()" ng-class="{active: $ctrl.isActive('/admin')}"><a href="/admin">Panel</a></li>
-        <li ng-show="$ctrl.isLoggedIn()"><a href="/profile" >{{ $ctrl.getCurrentUser().name }}</a> </li>
-        <li ng-show="$ctrl.isLoggedIn()" ng-class="{active: $ctrl.isActive('/settings')}"><a href="/settings"><span class="glyphicon glyphicon-cog"></span></a></li>
+        <li ng-show="$ctrl.isLoggedIn()" ng-class="{active: $ctrl.isActive('/profile')}"><a href="/profile" >{{ $ctrl.getCurrentUser().name }}</a> </li>
         <li ng-show="$ctrl.isLoggedIn()"><a href="/logout">Logout</a></li>
       </ul>
     </div>
