@@ -10,6 +10,12 @@ $fa-font-path: '/assets/fonts/font-awesome/';
  * App-wide Styles
  */
 
+body {
+	font-family: "proxima-nova",sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -18,9 +24,10 @@ $fa-font-path: '/assets/fonts/font-awesome/';
 }
 
 .navbar {
-	border-bottom: 3px solid #ff0049;
+	border-bottom: 3px solid #29beb7;
 	background-color: #fff;
 	min-height: 100px;
+	margin-bottom: 40px;
 	.navbar-header {
 		img {
 			width: 45%;
