@@ -1,0 +1,16 @@
+.profile-page {
+    .profile-info {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-gap: 2em;
+        img {
+                max-width: 200px;
+                border-radius: 50%;
+        }
+        .profile-name {
+            h1 {
+            font-weight: 300;
+            }
+        }
+    }
+}

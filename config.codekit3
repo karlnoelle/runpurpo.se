@@ -7,7 +7,7 @@
 		"uuidString": "53878244-8B78-4C4F-93BD-18B59176FAE8"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "25849",
 "files": {
 	"\/.babelrc": {
 		"ft": 8192,
@@ -329,6 +329,15 @@
 		"sIE": 0,
 		"tEC": 0
 		},
+	"\/client\/app\/app.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/client\/app\/app-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/client\/app\/app.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -358,225 +367,6 @@
 		"rC": 0,
 		"sIE": 0,
 		"tEC": 0
-		},
-	"\/client\/app\/createEvent\/createEvent.component.spec.ts": {
-		"cDF": 0,
-		"ft": 128,
-		"jxM": 0,
-		"ma": 0,
-		"mi": 0,
-		"moR": 0,
-		"moT": 2,
-		"nIA": 0,
-		"oA": 0,
-		"oAP": "\/client\/app\/createEvent\/createEvent.component.spec.js",
-		"oF": 0,
-		"pCE": 0,
-		"rC": 0,
-		"sIE": 0,
-		"tEC": 0
-		},
-	"\/client\/app\/createEvent\/createEvent.component.ts": {
-		"cDF": 0,
-		"ft": 128,
-		"jxM": 0,
-		"ma": 0,
-		"mi": 0,
-		"moR": 0,
-		"moT": 2,
-		"nIA": 0,
-		"oA": 1,
-		"oAP": "\/client\/app\/createEvent\/createEvent.component.js",
-		"oF": 0,
-		"pCE": 0,
-		"rC": 0,
-		"sIE": 0,
-		"tEC": 0
-		},
-	"\/client\/app\/createEvent\/createEvent.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/client\/app\/createEvent\/createEvent.html",
-		"oF": 0
-		},
-	"\/client\/app\/createEvent\/createEvent.routes.ts": {
-		"cDF": 0,
-		"ft": 128,
-		"jxM": 0,
-		"ma": 0,
-		"mi": 0,
-		"moR": 0,
-		"moT": 2,
-		"nIA": 0,
-		"oA": 1,
-		"oAP": "\/client\/app\/createEvent\/createEvent.routes.js",
-		"oF": 0,
-		"pCE": 0,
-		"rC": 0,
-		"sIE": 0,
-		"tEC": 0
-		},
-	"\/client\/app\/createEvent\/createEvent.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/client\/app\/createEvent\/createEvent.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/client\/app\/eventDetails\/eventDetails.component.spec.ts": {
-		"cDF": 0,
-		"ft": 128,
-		"jxM": 0,
-		"ma": 0,
-		"mi": 0,
-		"moR": 0,
-		"moT": 2,
-		"nIA": 0,
-		"oA": 0,
-		"oAP": "\/client\/app\/eventDetails\/eventDetails.component.spec.js",
-		"oF": 0,
-		"pCE": 0,
-		"rC": 0,
-		"sIE": 0,
-		"tEC": 0
-		},
-	"\/client\/app\/eventDetails\/eventDetails.component.ts": {
-		"cDF": 0,
-		"ft": 128,
-		"jxM": 0,
-		"ma": 0,
-		"mi": 0,
-		"moR": 0,
-		"moT": 2,
-		"nIA": 0,
-		"oA": 1,
-		"oAP": "\/client\/app\/eventDetails\/eventDetails.component.js",
-		"oF": 0,
-		"pCE": 0,
-		"rC": 0,
-		"sIE": 0,
-		"tEC": 0
-		},
-	"\/client\/app\/eventDetails\/eventDetails.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/client\/app\/eventDetails\/eventDetails.html",
-		"oF": 0
-		},
-	"\/client\/app\/eventDetails\/eventDetails.routes.ts": {
-		"cDF": 0,
-		"ft": 128,
-		"jxM": 0,
-		"ma": 0,
-		"mi": 0,
-		"moR": 0,
-		"moT": 2,
-		"nIA": 0,
-		"oA": 1,
-		"oAP": "\/client\/app\/eventDetails\/eventDetails.routes.js",
-		"oF": 0,
-		"pCE": 0,
-		"rC": 0,
-		"sIE": 0,
-		"tEC": 0
-		},
-	"\/client\/app\/eventDetails\/eventDetails.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/client\/app\/eventDetails\/eventDetails.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/client\/app\/eventDetails\/eventDetailsController.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/client\/app\/eventDetails\/eventDetailsController-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/client\/app\/events\/events.component.spec.ts": {
-		"cDF": 0,
-		"ft": 128,
-		"jxM": 0,
-		"ma": 0,
-		"mi": 0,
-		"moR": 0,
-		"moT": 2,
-		"nIA": 0,
-		"oA": 0,
-		"oAP": "\/client\/app\/events\/events.component.spec.js",
-		"oF": 0,
-		"pCE": 0,
-		"rC": 0,
-		"sIE": 0,
-		"tEC": 0
-		},
-	"\/client\/app\/events\/events.component.ts": {
-		"cDF": 0,
-		"ft": 128,
-		"jxM": 0,
-		"ma": 0,
-		"mi": 0,
-		"moR": 0,
-		"moT": 2,
-		"nIA": 0,
-		"oA": 1,
-		"oAP": "\/client\/app\/events\/events.component.js",
-		"oF": 0,
-		"pCE": 0,
-		"rC": 0,
-		"sIE": 0,
-		"tEC": 0
-		},
-	"\/client\/app\/events\/events.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/client\/app\/events\/events.html",
-		"oF": 0
-		},
-	"\/client\/app\/events\/events.routes.ts": {
-		"cDF": 0,
-		"ft": 128,
-		"jxM": 0,
-		"ma": 0,
-		"mi": 0,
-		"moR": 0,
-		"moT": 2,
-		"nIA": 0,
-		"oA": 1,
-		"oAP": "\/client\/app\/events\/events.routes.js",
-		"oF": 0,
-		"pCE": 0,
-		"rC": 0,
-		"sIE": 0,
-		"tEC": 0
-		},
-	"\/client\/app\/events\/events.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/client\/app\/events\/events.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
 		},
 	"\/client\/app\/main\/main.component.spec.ts": {
 		"cDF": 0,
@@ -644,6 +434,76 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/client\/app\/main\/main.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/client\/app\/profile\/profile.component.spec.ts": {
+		"cDF": 0,
+		"ft": 128,
+		"jxM": 0,
+		"ma": 0,
+		"mi": 0,
+		"moR": 0,
+		"moT": 2,
+		"nIA": 0,
+		"oA": 0,
+		"oAP": "\/client\/app\/profile\/profile.component.spec.js",
+		"oF": 0,
+		"pCE": 0,
+		"rC": 0,
+		"sIE": 0,
+		"tEC": 0
+		},
+	"\/client\/app\/profile\/profile.component.ts": {
+		"cDF": 0,
+		"ft": 128,
+		"jxM": 0,
+		"ma": 0,
+		"mi": 0,
+		"moR": 0,
+		"moT": 2,
+		"nIA": 0,
+		"oA": 1,
+		"oAP": "\/client\/app\/profile\/profile.component.js",
+		"oF": 0,
+		"pCE": 0,
+		"rC": 0,
+		"sIE": 0,
+		"tEC": 0
+		},
+	"\/client\/app\/profile\/profile.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/client\/app\/profile\/profile.html",
+		"oF": 0
+		},
+	"\/client\/app\/profile\/profile.routes.ts": {
+		"cDF": 0,
+		"ft": 128,
+		"jxM": 0,
+		"ma": 0,
+		"mi": 0,
+		"moR": 0,
+		"moT": 2,
+		"nIA": 0,
+		"oA": 1,
+		"oAP": "\/client\/app\/profile\/profile.routes.js",
+		"oF": 0,
+		"pCE": 0,
+		"rC": 0,
+		"sIE": 0,
+		"tEC": 0
+		},
+	"\/client\/app\/profile\/profile.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/client\/app\/profile\/profile.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -721,6 +581,49 @@
 		"oA": 2,
 		"oAP": "\/client\/assets\/fonts\/font-awesome\/FontAwesome.otf",
 		"oF": 0
+		},
+	"\/client\/assets\/images\/facebook-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/client\/assets\/images\/facebook-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/client\/assets\/images\/home\/coffee-icon.png": {
+		"ft": 32768,
+		"iS": 1773,
+		"oA": 0,
+		"oAP": "\/client\/assets\/images\/home\/coffee-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/client\/assets\/images\/home\/community-icon.png": {
+		"ft": 32768,
+		"iS": 5799,
+		"oA": 0,
+		"oAP": "\/client\/assets\/images\/home\/community-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/client\/assets\/images\/home\/passion-icon.png": {
+		"ft": 32768,
+		"iS": 13443,
+		"oA": 0,
+		"oAP": "\/client\/assets\/images\/home\/passion-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/client\/assets\/images\/runpurpose-logo.svg": {
 		"ft": 2097152,
@@ -816,6 +719,225 @@
 		"rC": 0,
 		"sIE": 0,
 		"tEC": 0
+		},
+	"\/client\/components\/createEvent\/createEvent.component.spec.ts": {
+		"cDF": 0,
+		"ft": 128,
+		"jxM": 0,
+		"ma": 0,
+		"mi": 0,
+		"moR": 0,
+		"moT": 2,
+		"nIA": 0,
+		"oA": 0,
+		"oAP": "\/client\/components\/createEvent\/createEvent.component.spec.js",
+		"oF": 0,
+		"pCE": 0,
+		"rC": 0,
+		"sIE": 0,
+		"tEC": 0
+		},
+	"\/client\/components\/createEvent\/createEvent.component.ts": {
+		"cDF": 0,
+		"ft": 128,
+		"jxM": 0,
+		"ma": 0,
+		"mi": 0,
+		"moR": 0,
+		"moT": 2,
+		"nIA": 0,
+		"oA": 1,
+		"oAP": "\/client\/components\/createEvent\/createEvent.component.js",
+		"oF": 0,
+		"pCE": 0,
+		"rC": 0,
+		"sIE": 0,
+		"tEC": 0
+		},
+	"\/client\/components\/createEvent\/createEvent.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/client\/components\/createEvent\/createEvent.html",
+		"oF": 0
+		},
+	"\/client\/components\/createEvent\/createEvent.routes.ts": {
+		"cDF": 0,
+		"ft": 128,
+		"jxM": 0,
+		"ma": 0,
+		"mi": 0,
+		"moR": 0,
+		"moT": 2,
+		"nIA": 0,
+		"oA": 1,
+		"oAP": "\/client\/components\/createEvent\/createEvent.routes.js",
+		"oF": 0,
+		"pCE": 0,
+		"rC": 0,
+		"sIE": 0,
+		"tEC": 0
+		},
+	"\/client\/components\/createEvent\/createEvent.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/client\/components\/createEvent\/createEvent.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/client\/components\/eventDetails\/eventDetails.component.spec.ts": {
+		"cDF": 0,
+		"ft": 128,
+		"jxM": 0,
+		"ma": 0,
+		"mi": 0,
+		"moR": 0,
+		"moT": 2,
+		"nIA": 0,
+		"oA": 0,
+		"oAP": "\/client\/components\/eventDetails\/eventDetails.component.spec.js",
+		"oF": 0,
+		"pCE": 0,
+		"rC": 0,
+		"sIE": 0,
+		"tEC": 0
+		},
+	"\/client\/components\/eventDetails\/eventDetails.component.ts": {
+		"cDF": 0,
+		"ft": 128,
+		"jxM": 0,
+		"ma": 0,
+		"mi": 0,
+		"moR": 0,
+		"moT": 2,
+		"nIA": 0,
+		"oA": 1,
+		"oAP": "\/client\/components\/eventDetails\/eventDetails.component.js",
+		"oF": 0,
+		"pCE": 0,
+		"rC": 0,
+		"sIE": 0,
+		"tEC": 0
+		},
+	"\/client\/components\/eventDetails\/eventDetails.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/client\/components\/eventDetails\/eventDetails.html",
+		"oF": 0
+		},
+	"\/client\/components\/eventDetails\/eventDetails.routes.ts": {
+		"cDF": 0,
+		"ft": 128,
+		"jxM": 0,
+		"ma": 0,
+		"mi": 0,
+		"moR": 0,
+		"moT": 2,
+		"nIA": 0,
+		"oA": 1,
+		"oAP": "\/client\/components\/eventDetails\/eventDetails.routes.js",
+		"oF": 0,
+		"pCE": 0,
+		"rC": 0,
+		"sIE": 0,
+		"tEC": 0
+		},
+	"\/client\/components\/eventDetails\/eventDetails.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/client\/components\/eventDetails\/eventDetails.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/client\/components\/eventDetails\/eventDetailsController.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/client\/components\/eventDetails\/eventDetailsController-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/client\/components\/events\/events.component.spec.ts": {
+		"cDF": 0,
+		"ft": 128,
+		"jxM": 0,
+		"ma": 0,
+		"mi": 0,
+		"moR": 0,
+		"moT": 2,
+		"nIA": 0,
+		"oA": 0,
+		"oAP": "\/client\/components\/events\/events.component.spec.js",
+		"oF": 0,
+		"pCE": 0,
+		"rC": 0,
+		"sIE": 0,
+		"tEC": 0
+		},
+	"\/client\/components\/events\/events.component.ts": {
+		"cDF": 0,
+		"ft": 128,
+		"jxM": 0,
+		"ma": 0,
+		"mi": 0,
+		"moR": 0,
+		"moT": 2,
+		"nIA": 0,
+		"oA": 1,
+		"oAP": "\/client\/components\/events\/events.component.js",
+		"oF": 0,
+		"pCE": 0,
+		"rC": 0,
+		"sIE": 0,
+		"tEC": 0
+		},
+	"\/client\/components\/events\/events.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/client\/components\/events\/events.html",
+		"oF": 0
+		},
+	"\/client\/components\/events\/events.routes.ts": {
+		"cDF": 0,
+		"ft": 128,
+		"jxM": 0,
+		"ma": 0,
+		"mi": 0,
+		"moR": 0,
+		"moT": 2,
+		"nIA": 0,
+		"oA": 1,
+		"oAP": "\/client\/components\/events\/events.routes.js",
+		"oF": 0,
+		"pCE": 0,
+		"rC": 0,
+		"sIE": 0,
+		"tEC": 0
+		},
+	"\/client\/components\/events\/events.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/client\/components\/events\/events.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/client\/components\/footer\/footer.component.ts": {
 		"cDF": 0,
@@ -1076,6 +1198,644 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/dist\/client\/.htaccess": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/.htaccess",
+		"oF": 0
+		},
+	"\/dist\/client\/app.a2dadbdd01517350f2b8.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/client\/app.a2dadbdd01517350f2b8-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/client\/app.a2dadbdd01517350f2b8.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/app.a2dadbdd01517350f2b8.js.map",
+		"oF": 0
+		},
+	"\/dist\/client\/assets\/fonts\/bootstrap\/glyphicons-halflings-regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/assets\/fonts\/bootstrap\/glyphicons-halflings-regular.eot",
+		"oF": 0
+		},
+	"\/dist\/client\/assets\/fonts\/bootstrap\/glyphicons-halflings-regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/client\/assets\/fonts\/bootstrap\/glyphicons-halflings-regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/dist\/client\/assets\/fonts\/bootstrap\/glyphicons-halflings-regular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/assets\/fonts\/bootstrap\/glyphicons-halflings-regular.ttf",
+		"oF": 0
+		},
+	"\/dist\/client\/assets\/fonts\/bootstrap\/glyphicons-halflings-regular.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/assets\/fonts\/bootstrap\/glyphicons-halflings-regular.woff",
+		"oF": 0
+		},
+	"\/dist\/client\/assets\/fonts\/bootstrap\/glyphicons-halflings-regular.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/assets\/fonts\/bootstrap\/glyphicons-halflings-regular.woff2",
+		"oF": 0
+		},
+	"\/dist\/client\/assets\/fonts\/font-awesome\/fontawesome-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/assets\/fonts\/font-awesome\/fontawesome-webfont.eot",
+		"oF": 0
+		},
+	"\/dist\/client\/assets\/fonts\/font-awesome\/fontawesome-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/client\/assets\/fonts\/font-awesome\/fontawesome-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/dist\/client\/assets\/fonts\/font-awesome\/fontawesome-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/assets\/fonts\/font-awesome\/fontawesome-webfont.ttf",
+		"oF": 0
+		},
+	"\/dist\/client\/assets\/fonts\/font-awesome\/fontawesome-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/assets\/fonts\/font-awesome\/fontawesome-webfont.woff",
+		"oF": 0
+		},
+	"\/dist\/client\/assets\/fonts\/font-awesome\/fontawesome-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/assets\/fonts\/font-awesome\/fontawesome-webfont.woff2",
+		"oF": 0
+		},
+	"\/dist\/client\/assets\/fonts\/font-awesome\/FontAwesome.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/assets\/fonts\/font-awesome\/FontAwesome.otf",
+		"oF": 0
+		},
+	"\/dist\/client\/assets\/images\/facebook-logo-f691d6e628.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/client\/assets\/images\/facebook-logo-f691d6e628.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/dist\/client\/assets\/images\/home\/coffee-icon-91a921bf19.png": {
+		"ft": 32768,
+		"iS": 1020,
+		"oA": 0,
+		"oAP": "\/dist\/client\/assets\/images\/home\/coffee-icon-91a921bf19.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/client\/assets\/images\/home\/community-icon-bbb6065710.png": {
+		"ft": 32768,
+		"iS": 2708,
+		"oA": 0,
+		"oAP": "\/dist\/client\/assets\/images\/home\/community-icon-bbb6065710.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/client\/assets\/images\/home\/passion-icon-b97b51ac0b.png": {
+		"ft": 32768,
+		"iS": 6724,
+		"oA": 0,
+		"oAP": "\/dist\/client\/assets\/images\/home\/passion-icon-b97b51ac0b.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dist\/client\/assets\/images\/runpurpose-logo-3ccd8dcdee.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/client\/assets\/images\/runpurpose-logo-3ccd8dcdee.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/dist\/client\/assets\/rev-manifest.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/dist\/client\/assets\/rev-manifest-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/dist\/client\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/favicon.ico",
+		"oF": 0
+		},
+	"\/dist\/client\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/index.html",
+		"oF": 0
+		},
+	"\/dist\/client\/polyfills.a2dadbdd01517350f2b8.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/client\/polyfills.a2dadbdd01517350f2b8-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/client\/polyfills.a2dadbdd01517350f2b8.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/polyfills.a2dadbdd01517350f2b8.js.map",
+		"oF": 0
+		},
+	"\/dist\/client\/robots.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/robots.txt",
+		"oF": 0
+		},
+	"\/dist\/client\/vendor.a2dadbdd01517350f2b8.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/client\/vendor.a2dadbdd01517350f2b8-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/client\/vendor.a2dadbdd01517350f2b8.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/client\/vendor.a2dadbdd01517350f2b8.js.map",
+		"oF": 0
+		},
+	"\/dist\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/dist\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/dist\/Procfile": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/Procfile",
+		"oF": 0
+		},
+	"\/dist\/server\/api\/thing\/index.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/api\/thing\/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/api\/thing\/index.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/api\/thing\/index.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/api\/thing\/thing.controller.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/api\/thing\/thing.controller-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/api\/thing\/thing.controller.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/api\/thing\/thing.controller.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/api\/thing\/thing.events.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/api\/thing\/thing.events-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/api\/thing\/thing.events.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/api\/thing\/thing.events.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/api\/thing\/thing.model.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/api\/thing\/thing.model-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/api\/thing\/thing.model.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/api\/thing\/thing.model.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/api\/user\/index.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/api\/user\/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/api\/user\/index.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/api\/user\/index.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/api\/user\/user.controller.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/api\/user\/user.controller-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/api\/user\/user.controller.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/api\/user\/user.controller.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/api\/user\/user.events.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/api\/user\/user.events-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/api\/user\/user.events.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/api\/user\/user.events.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/api\/user\/user.model.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/api\/user\/user.model-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/api\/user\/user.model.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/api\/user\/user.model.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/app.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/app-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/app.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/app.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/auth\/auth.service.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/auth\/auth.service-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/auth\/auth.service.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/auth\/auth.service.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/auth\/facebook\/index.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/auth\/facebook\/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/auth\/facebook\/index.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/auth\/facebook\/index.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/auth\/facebook\/passport.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/auth\/facebook\/passport-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/auth\/facebook\/passport.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/auth\/facebook\/passport.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/auth\/index.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/auth\/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/auth\/index.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/auth\/index.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/auth\/local\/index.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/auth\/local\/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/auth\/local\/index.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/auth\/local\/index.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/auth\/local\/passport.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/auth\/local\/passport-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/auth\/local\/passport.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/auth\/local\/passport.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/auth\/twitter\/index.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/auth\/twitter\/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/auth\/twitter\/index.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/auth\/twitter\/index.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/auth\/twitter\/passport.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/auth\/twitter\/passport-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/auth\/twitter\/passport.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/auth\/twitter\/passport.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/components\/errors\/index.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/components\/errors\/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/components\/errors\/index.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/components\/errors\/index.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/config\/environment\/development.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/config\/environment\/development-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/config\/environment\/development.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/config\/environment\/development.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/config\/environment\/index.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/config\/environment\/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/config\/environment\/index.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/config\/environment\/index.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/config\/environment\/production.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/config\/environment\/production-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/config\/environment\/production.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/config\/environment\/production.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/config\/environment\/shared.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/config\/environment\/shared-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/config\/environment\/shared.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/config\/environment\/shared.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/config\/environment\/test.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/config\/environment\/test-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/config\/environment\/test.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/config\/environment\/test.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/config\/express.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/config\/express-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/config\/express.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/config\/express.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/config\/local.env.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/config\/local.env-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/config\/local.env.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/config\/local.env.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/config\/seed.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/config\/seed-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/config\/seed.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/config\/seed.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/index.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/index.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/index.js.map",
+		"oF": 0
+		},
+	"\/dist\/server\/routes.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/server\/routes-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/server\/routes.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/server\/routes.js.map",
+		"oF": 0
+		},
 	"\/e2e\/account\/login\/login.po.js": {
 		"ft": 64,
 		"mi": 1,
@@ -1199,6 +1959,14 @@
 		"oAP": "\/build\/node_modules",
 		"oF": 0
 		},
+	"\/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/package.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -1206,6 +1974,12 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/Procfile": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Procfile",
+		"oF": 0
 		},
 	"\/protractor.conf.js": {
 		"ft": 64,
@@ -1766,6 +2540,23 @@
 		"nIA": 0,
 		"oA": 0,
 		"oAP": "\/typings\/browser\/ambient\/webpack\/index.d.js",
+		"oF": 0,
+		"pCE": 0,
+		"rC": 0,
+		"sIE": 0,
+		"tEC": 0
+		},
+	"\/typings\/index.d.ts": {
+		"cDF": 0,
+		"ft": 128,
+		"jxM": 0,
+		"ma": 0,
+		"mi": 0,
+		"moR": 0,
+		"moT": 2,
+		"nIA": 0,
+		"oA": 0,
+		"oAP": "\/typings\/index.d.js",
 		"oF": 0,
 		"pCE": 0,
 		"rC": 0,
@@ -3940,6 +4731,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",

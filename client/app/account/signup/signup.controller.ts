@@ -30,7 +30,7 @@ export default class SignupController {
   register(form) {
     this.submitted = true;
 
-    if(form.$valid) {
+    if( form.$valid ) {
       return this.Auth.createUser({
         name: this.user.name,
         email: this.user.email,
@@ -38,6 +38,7 @@ export default class SignupController {
       })
       .then(() => {
         // Account created, redirect to home
+        alert('Account Created! Welcome to R4AP. THAT WAS THE EASY PART. GO RUN.')
         this.$location.path('/');              })
       .catch(err => {
         err = err.data;

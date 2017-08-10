@@ -1,8 +1,15 @@
-<div class="container">
-    <h3>This is the profile view; where users can view their profile.</h3>
+<div class="container profile-page">
+    <section class="profile-info">
+        <img src="./../assets/images/profile/profile-pic.png" />
+        <div class="profile-name">
+            <h1>{{ $ctrl.getCurrentUser().name }}</h1>
+            <p><span class="bold">Member since: </span>July 2017</p>
+            <a href="/settings"><span class="glyphicon glyphicon-cog"></span> Edit Profile</a>
+        </div>
+    </section>
+
     <p>Name, location, preferred sport, past race times, future race dates, number of run events attended, etc.</p>
-    <p>Wanna edit your profile? That should accessible from here, on the <i>profile</i> page.</p>
-    <a href="/settings"><span class="glyphicon glyphicon-cog"></span> Edit Profile</a>
+    
 </div>
 
 <div class="container">
