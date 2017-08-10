@@ -10,6 +10,15 @@ $fa-font-path: '/assets/fonts/font-awesome/';
  * App-wide Styles
  */
 
+*[ng-click] {
+    cursor: pointer;
+	}
+
+
+	.bold {
+		font-weight: 700;
+	}
+
 body {
 	font-family: "proxima-nova",sans-serif;
 	-webkit-font-smoothing: antialiased;

@@ -1,0 +1,61 @@
+.events-page {
+    h1 {
+        font-weight: 300;
+    }
+    .upcoming-events {
+        a {
+            text-decoration: none;
+            color: #333;
+            display: inline-block;
+        }
+        .upcoming-event {
+            display: grid;
+            grid-template-columns: 70px 100px 1fr 80px;
+            grid-gap: 2.8em;
+            align-items: center;
+            border: 2px solid #29beb7;
+            border-radius: .6em;
+            padding: 1em 1em 1em 1.6em;
+            h2 {
+                font-weight: 300;
+                margin: 0;
+                a {
+                    color: #ff0049;
+                    text-decoration: none;
+                }
+            }
+            .upcoming-event-name {
+                h2 {
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+                .address-label {
+                    font-weight: 700;
+                    margin: 0.8em 0em 0em 0em;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .past-events {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        .past-event {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            align-items: center;
+            border: 2px solid #848787;
+            border-radius: .6em;
+            min-height: 6.4em;
+            padding: .8em;
+            p {
+                margin: 0em;
+                font-size: 1em;
+            }
+        }
+    }
+}

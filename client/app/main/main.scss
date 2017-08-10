@@ -90,6 +90,7 @@
   .run-benefits {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3em;
     .benefit-img {
       width: 50%;
       margin: 0 auto;
@@ -102,10 +103,7 @@
       text-align: center;
     }
   }
-
-
-
-}
+} //end .homepage-content
 
 .navbar-text {
   margin-left: 15px;
@@ -125,4 +123,4 @@
       }
     }
   }
-}
+} //end .homepage

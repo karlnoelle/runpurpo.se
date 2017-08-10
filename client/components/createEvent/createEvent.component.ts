@@ -21,3 +21,8 @@ export default angular.module('runpurposeApp.createEvent', [ngRoute])
     controllerAs: 'createEventCtrl'
   })
   .name;
+
+var eventName;
+var eventDescription;
+var eventDate;
+var eventAddress;
