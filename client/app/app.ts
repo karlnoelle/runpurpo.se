@@ -27,6 +27,7 @@ import eventsModule from '../components/events/events.component';
 import eventDetailsModule from '../components/eventDetails/eventDetails.component';
 import CreateEventComponent from '../components/createEvent/createEvent.component';
 import ProfileComponent from './profile/profile.component';
+import SingleEventComponent from './singleEvent/singleEvent.component';
 
 import './app.scss';
 
@@ -50,6 +51,7 @@ angular.module('runpurposeApp', [
   eventDetailsModule,
   CreateEventComponent,
   ProfileComponent,
+  SingleEventComponent,
 
   util
 ])
