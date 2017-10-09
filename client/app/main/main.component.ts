@@ -1,6 +1,8 @@
 const angular = require('angular');
 const ngRoute = require('angular-route');
+
 import routing from './main.routes';
+import oauthButtons from '../../components/oauth-buttons';
 
 export class MainController {
   $http;

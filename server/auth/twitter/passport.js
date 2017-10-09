@@ -3,9 +3,9 @@ import {Strategy as TwitterStrategy} from 'passport-twitter';
 
 export function setup(User, config) {
   passport.use(new TwitterStrategy({
-    consumerKey: config.twitter.clientID,
-    consumerSecret: config.twitter.clientSecret,
-    callbackURL: config.twitter.callbackURL
+    consumerKey: 'Odxx07uvzdZAZY8J0pFOLKpoz',
+    consumerSecret: 'DpR1Cr0uWB44TzxkLVE2jIkkNJ4I390TGBbRODg5ywBQd8WU6D',
+    callbackURL: 'http://localhost:3000/auth/twitter/callback'
   },
   function(token, tokenSecret, profile, done) {
     profile._json.id = `${profile._json.id}`;
