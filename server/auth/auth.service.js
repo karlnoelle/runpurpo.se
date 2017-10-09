@@ -13,6 +13,7 @@ var validateJwt = expressJwt({
  * Attaches the user object to the request if authenticated
  * Otherwise returns 403
  */
+
 export function isAuthenticated() {
   return compose()
     // Validate jwt
