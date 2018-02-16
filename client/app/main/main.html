@@ -29,14 +29,10 @@
 <section class="container homepage-content">
 
 <div class="homepage-cta">
-  <h2>Join the club and reach your goals</h2>
+  <h2>Join the club &amp; reach your goals</h2>
   <div class="cta-content">
-    <p>Attend weekly events, track your progress & meet fun people along the way!</p>
-    <oauth-buttons classes="btn-block"></oauth-buttons>    
-    <a ng-class="classes" class="cta-button" ng-click="OauthButtons.loginOauth('facebook')">
-      <img src="../assets/images/facebook-logo.svg" />
-      <p>Continue with Facebook</p>
-    </a>
+    <p>Attend weekly events, track your progress &amp; meet fun people along the way!</p>
+    <oauth-buttons ng-hide="$ctrl.isLoggedIn()" classes="btn-block"></oauth-buttons>
   </div>
 </div>
 

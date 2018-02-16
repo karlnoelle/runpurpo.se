@@ -8,9 +8,14 @@ import routes from './createEvent.routes';
 export class CreateEventComponent {
   message: string;
   /*@ngInject*/
-  constructor() {
-    this.message = 'Hello';
-  }
+  // constructor() {
+  //   const newEvent = {
+  //     eventName: eventName,
+  //     eventDescription: eventDescription,
+  //     eventDate: eventDate,
+  //     eventAddress: eventAddress
+  //   }
+  //}
 }
 
 export default angular.module('runpurposeApp.createEvent', [ngRoute])
@@ -21,8 +26,3 @@ export default angular.module('runpurposeApp.createEvent', [ngRoute])
     controllerAs: 'createEventCtrl'
   })
   .name;
-
-var eventName;
-var eventDescription;
-var eventDate;
-var eventAddress;
