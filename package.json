@@ -51,7 +51,7 @@
     "angular-mocks": "~1.6.0",
     "autoprefixer": "^6.0.0",
     "awesome-typescript-loader": "^1.1.1",
-    "babel-core": "^6.6.5",
+    "babel-core": "^6.26.0",
     "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-class-properties": "^6.24.1",

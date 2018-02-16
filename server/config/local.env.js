@@ -9,11 +9,11 @@ module.exports = {
   DOMAIN: 'http://localhost:3000',
   SESSION_SECRET: 'runpurpose-secret',
 
-  FACEBOOK_ID: 'app-id',
-  FACEBOOK_SECRET: 'secret',
+  FACEBOOK_ID: '300878227033708',
+  FACEBOOK_SECRET: '6831bbd62e8b58b67bd5e935ecf6332c',
 
-  TWITTER_ID: 'app-id',
-  TWITTER_SECRET: 'secret',
+  TWITTER_ID: 'Odxx07uvzdZAZY8J0pFOLKpoz',
+  TWITTER_SECRET: 'DpR1Cr0uWB44TzxkLVE2jIkkNJ4I390TGBbRODg5ywBQd8WU6D',
 
   // Control debug level for modules using visionmedia/debug
   DEBUG: ''
