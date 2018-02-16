@@ -9,6 +9,7 @@ var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 var fs = require('fs');
 var path = require('path');
 var ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
+var DashboardPlugin = require('webpack-dashboard/plugin');
 
 module.exports = function makeWebpackConfig(options) {
     /**
