@@ -65,26 +65,7 @@
     .cta-content {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      .cta-button {
-        background-color: #3c5a99;
-        display: grid;
-        grid-template-columns: 1fr 6fr;
-        width: 20em;
-        border-radius: .6em;
-        img {
-          width: 2em;
-          margin: 1em 1em 1em 1.6em;
-        }
-        p {
-          font-weight: 700;
-          color: #fff;
-          margin: 1em 0em;
-          font-size: 1.2em;
-        }
-      }
     }
-
-
   }
 
   .run-benefits {

@@ -19,6 +19,11 @@ $fa-font-path: '/assets/fonts/font-awesome/';
 		font-weight: 700;
 	}
 
+::selection {
+	background-color: rgba(41, 190, 183, 0.3);
+	color: #545454;
+}
+
 body {
 	font-family: "proxima-nova",sans-serif;
 	-webkit-font-smoothing: antialiased;

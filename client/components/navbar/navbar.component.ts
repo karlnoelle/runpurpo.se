@@ -7,8 +7,8 @@ export class NavbarComponent {
     'title': 'Home',
     'link': '/'
   }, {
-    title: 'Events',
-    link: '/events'
+    'title': 'Events',
+    'link': '/events'
   }];
   $location;
   isLoggedIn: Function;
@@ -16,7 +16,7 @@ export class NavbarComponent {
   getCurrentUser: Function;
   isCollapsed = true;
 
-  constructor($location, Auth) {
+  constructor($location, Auth, $rootScope) {
     'ngInject';
     this.$location = $location;
     this.isLoggedIn = Auth.isLoggedInSync;

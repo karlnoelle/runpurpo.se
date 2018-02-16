@@ -5,7 +5,7 @@ export function setup(User, config) {
   passport.use(new FacebookStrategy({
     clientID: '300878227033708',
     clientSecret: '6831bbd62e8b58b67bd5e935ecf6332c',
-    callbackURL: 'http://localhost:3000/auth/facebook/callback',
+    callbackURL: 'http://test.runpurpo.se/auth/facebook/callback',
     profileFields: [
       'displayName',
       'emails'
