@@ -1,11 +1,12 @@
 import passport from 'passport';
 import {Strategy as TwitterStrategy} from 'passport-twitter';
+import env from '../../config/local.env';
 
 export function setup(User, config) {
   passport.use(new TwitterStrategy({
-    consumerKey: 'TWITTER_ID',
-    consumerSecret: 'TWITTER_SECRET',
-    callbackURL: 'http://localhost:3000/auth/twitter/callback'
+    consumerKey: env.TWITTER_ID,
+    consumerSecret: env.TWITTER_SECRET,
+    callbackURL: env.DOMAIN + '/auth/twitter/callback'
   },
   function(token, tokenSecret, profile, done) {
     profile._json.id = `${profile._json.id}`;

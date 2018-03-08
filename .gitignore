@@ -1,7 +1,7 @@
 node_modules
 public
 .DS_Store
-/*.env
+**/.env
 .tmp
 .sass-cache
 .idea
