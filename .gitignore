@@ -1,14 +1,12 @@
 node_modules
 public
 .DS_Store
-**/.env
+*/.env
 .tmp
 .sass-cache
 .idea
 client/bower_components
 client/index.html
-server/auth/facebook/passport.js
-server/auth/twitter/passport.js
 dist
 npm-debug.log
 coverage
