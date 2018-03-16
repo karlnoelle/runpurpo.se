@@ -1,7 +1,6 @@
 node_modules
 public
 .DS_Store
-*/.env
 .tmp
 .sass-cache
 .idea
@@ -10,3 +9,9 @@ client/index.html
 dist
 npm-debug.log
 coverage
+
+#this should be ignoring all environment files but not sure it's working
+*/.env
+
+#ignore the app secrets file
+server/config/local.env.js
