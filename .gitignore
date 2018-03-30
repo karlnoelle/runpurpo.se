@@ -1,17 +1,14 @@
 node_modules
 public
+dist
 .DS_Store
 .tmp
 .sass-cache
 .idea
 client/bower_components
 client/index.html
-dist
+server/config/local.env.js
 npm-debug.log
 coverage
 
-#this should be ignoring all environment files but not sure it's working
 */.env
-
-#ignore the app secrets file
-server/config/local.env.js
