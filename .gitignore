@@ -7,8 +7,10 @@ dist
 .idea
 client/bower_components
 client/index.html
-server/config/local.env.js
 npm-debug.log
 coverage
 
-*/.envlocal.env.js
+*/.env
+
+server/config/local.env.js
+local.env.js
