@@ -10,10 +10,10 @@ module.exports = {
   SESSION_SECRET: 'runpurpose-secret',
 
   FACEBOOK_ID: '300878227033708',
-  FACEBOOK_SECRET: 'e5b62d273324ce8425cd04f30038a4c1',
+  FACEBOOK_SECRET: 'b22a7fb8b1c2da91e084cb23014d6752',
 
-  TWITTER_ID: 'tlvk3A3WyPcbGw4wUqPxiccbF',
-  TWITTER_SECRET: '09HyfAlhAgjMHcfJDQBQAUSTEv2ovlGunOsEFwGUWAM7U1geQg',
+  TWITTER_ID: 'zPkpwhmwSYezlLi5hacmaZ5Hr',
+  TWITTER_SECRET: 'KPyHvaJXyigyrWzACgu3zr62tMYNjVJ8TrHEsg8HDFC1JiO97c',
 
   // Control debug level for modules using visionmedia/debug
   DEBUG: ''
