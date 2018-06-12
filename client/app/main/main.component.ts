@@ -41,3 +41,4 @@ export default angular.module('runpurposeApp.main', [
       controller: MainController
     })
     .name;
+    
