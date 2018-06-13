@@ -1,7 +1,5 @@
 # Running for a Purpose Web App
 
-This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 4.1.4.
-
 ## Getting Started
 
 ### Prerequisites
