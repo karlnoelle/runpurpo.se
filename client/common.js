@@ -18,23 +18,19 @@ $(function() {
 
     
     $headerDiv.html(`
-        <div class="navbar navbar-default navbar-static-top">
+        <div class="navbar">
             <div class="container">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" type="button">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <a href="/" class="navbar-brand"><img src="/assets/images/runpurpose-logo.svg" /></a>
+                <div class="navbar-left">
+                    <a href="/" class="navbar-logo"><img src="/assets/images/runpurpose-logo.svg" /></a>
                 </div>
-                <div class="navbar-collapse collapse" id="navbar-main">
-                    <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a>${title}</a>
-                    </li>
-                    <li><a class="profile-login" href="#">${label}</a></li>
+                <div class="navbar-right">
+                    <ul class="navbar-menu">
+                        <li>
+                            <a href="#">${title}</a>
+                        </li>
+                        <li>
+                            <a class="profile-login" href="#">${label}</a>
+                        </li>
                     </ul>
                 </div>
             </div>

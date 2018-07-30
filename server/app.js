@@ -1,21 +1,21 @@
 const express = require('express');
 const passport = require('passport');
 const process = require('process');
-//const Strategy = require('passport-local').Strategy
+const Strategy = require('passport-local').Strategy
 const app = express();
 
-/* var users = [
+var users = [
     {id: 1, username: 'rick', password: 'petty', displayName: 'rp', emails: [ { value: 'rp@aol.net'} ] }
-]; */
+];
 
-/* passport.use(new Strategy(
+passport.use(new Strategy(
     function(username, password, cb) {
         if (username === 'rick' && password === 'petty') {
             return cb(null, users [0]);
         }
         else cb(new Error('User ' + username + ' is erroring'));
     }
-)); */
+));
 
 app.use(express.static("client"));
 app.post('/login', passport.authenticate('local'));

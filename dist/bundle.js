@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./server/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -94,6 +94,17 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("const express = __webpack_require__(/*! express */ \"express\");\nconst passport = __webpack_require__(/*! passport */ \"passport\");\nconst process = __webpack_require__(/*! process */ \"process\");\n//const Strategy = require('passport-local').Strategy\nconst app = express();\n\n/* var users = [\n    {id: 1, username: 'rick', password: 'petty', displayName: 'rp', emails: [ { value: 'rp@aol.net'} ] }\n]; */\n\n/* passport.use(new Strategy(\n    function(username, password, cb) {\n        if (username === 'rick' && password === 'petty') {\n            return cb(null, users [0]);\n        }\n        else cb(new Error('User ' + username + ' is erroring'));\n    }\n)); */\n\napp.use(express.static(\"client\"));\napp.post('/login', passport.authenticate('local'));\napp.get('/profile', function (request, response) {\n    // TODO: validate user\n    let valid = true;\n    if (valid) {\n        response.sendFile(process.cwd() + '/client/profile.html');\n    } else {\n        response.redirect('/');\n    }\n});\n\napp.listen(3000, () => console.log('runpurpose is listening on port 3000'));\n\n//# sourceURL=webpack:///./server/app.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************!*\
+  !*** multi node ./server/app.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("!(function webpackMissingModule() { var e = new Error(\"Cannot find module 'node'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nmodule.exports = __webpack_require__(/*! /Users/karlnoelle1/Documents/runpurpose/server/app.js */\"./server/app.js\");\n\n\n//# sourceURL=webpack:///multi_node_./server/app.js?");
 
 /***/ }),
 

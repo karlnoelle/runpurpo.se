@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<link type="text/css" rel="stylesheet" href="css/index.css">
-<script type="text/javascript" src="./../dist/bundle.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous">
-  </script>
+<head>
+  <link type="text/css" rel="stylesheet" href="css/reset.css">
+  <link type="text/css" rel="stylesheet" href="css/index.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
-<script src="common.js"></script>
+  <script src="common.js"></script>
 
-<div class="header" data-title="main page"></div>
+  <link rel="stylesheet" href="https://use.typekit.net/xnd4fff.css">
+</head>
 
-<section class="container homepage-wrapper">
-  
-    <article class="hero-unit" id="banner">
+<div class="main-container">
+  <div class="header"></div>
+
+  <section class="homepage-wrapper">
+    <article class="hero-unit">
       <h1>Running for a Purpose is a weekly running club in Minneapolis.</h1>
-      <h6>smaller heading</h6>
     </article>
 
     <article class="homepage-module">
@@ -38,47 +37,39 @@
         </div>
       </div>
     </article>
+  </section>
 
-</section>
-<section class="container homepage-content">
+  <section class="homepage-content">
+    <div class="homepage-cta">
+      <h2>Join the club &amp; reach your goals</h2>
+      <div class="cta-content">
+      <p>Attend weekly events, track your progress &amp; meet fun people along the way!</p>
+      <oauth-buttons ng-hide="$ctrl.isLoggedIn()" classes="btn-block"></oauth-buttons>
+      </div>
+      </div>
 
-<div class="homepage-cta">
-  <h2>Join the club &amp; reach your goals</h2>
-  <div class="cta-content">
-    <p>Attend weekly events, track your progress &amp; meet fun people along the way!</p>
-    <oauth-buttons ng-hide="$ctrl.isLoggedIn()" classes="btn-block"></oauth-buttons>
-  </div>
-</div>
-
-<div class="run-benefits">
-  <div class="passion">
-    <div class="benefit-img">
+      <div class="run-benefits">
+      <div class="passion">
+      <div class="benefit-img">
+      </div>
+      <h2>Passionate Runners</h2>
+      <p>Everyone has their own reasons for running, but the unifying layer beneath it all is Passion. We believe putting 100% into something yields the most rewarding experiences. Run with Purpose!</p>
+      </div>
+      <div class="community">
+      <div class="benefit-img">
+      </div>
+      <h2>Building Community</h2>
+      <p>We believe in building authentic friendships with each other as we train! Running is so much more fun with friends — especially during those -10º sessions ;-)</p>
+      </div>
+      <div class="coffee">
+      <div class="benefit-img">
+      </div>
+      <h2>Coffee Addicts</h2>
+      <p>We run, and then we drink coffee! It’s the perfect combination. Following each run, we meet at a local coffee shop around Uptown and hang out before starting the weekend.</p>
     </div>
-    <h2>Passionate Runners</h2>
-    <p>Everyone has their own reasons for running, but the unifying layer beneath it all is Passion. We believe putting 100% into something yields the most rewarding experiences. Run with Purpose!</p>
-  </div>
-  <div class="community">
-    <div class="benefit-img">
-    </div>
-    <h2>Building Community</h2>
-    <p>We believe in building authentic friendships with each other as we train! Running is so much more fun with friends — especially during those -10º sessions ;-)</p>
-  </div>
-  <div class="coffee">
-    <div class="benefit-img">
-    </div>
-    <h2>Coffee Addicts</h2>
-    <p>We run, and then we drink coffee! It’s the perfect combination. Following each run, we meet at a local coffee shop around Uptown and hang out before starting the weekend.</p>
-  </div>
+  </section>
 
-</section>
-
-<div class="container">
-  <div class="row">
-    <div class="homepage col-lg-12">
-      <h1 class="page-header">Features:</h1>
-      <ul>
-        <li class="col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings"><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}</a></li>
-      </ul>
-    </div>
+  <div class="create-event">
+    <a href="/create-event.html">Create Event</a>
+    <a href="/event-template.html">View Event</a>
   </div>
-</div>

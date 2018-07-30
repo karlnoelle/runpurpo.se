@@ -1,0 +1,182 @@
+html {
+  font-family: "proxima-nova",sans-serif;
+  .main-container {
+    padding: 2em;
+  }
+}
+
+.header {
+  padding-bottom: 2em;
+  .navbar {
+    .container {
+      display: grid;
+      grid-template-columns: 10% auto;
+      .navbar-right {
+        justify-self: right;
+        .navbar-menu {
+          list-style: none;
+          display: grid;
+          grid-template-columns: 7em 7em;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+.homepage-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  margin-bottom: 40px;
+  .hero-unit {
+    font-size: 2em;
+    font-weight: 100;
+  }
+  .homepage-module {
+    border: 3px solid #ff0049;
+    border-radius: 6px;
+
+    .module-header {
+      background-color: #ff0049;
+      color: #fff;
+      padding: 0.8em 1.2em;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      h3 {
+        margin: 0;
+        font-size: 20px;
+      }
+      h3:nth-child(1) {
+        font-weight: 700;
+      }
+      h3:nth-child(2) {
+        text-align: right;
+      }
+    }
+
+  .module-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 1em;
+    padding: 1em 1.2em;
+  }
+
+  h5.module-label {
+      font-weight: 700;
+      padding-bottom: 0.4em;
+    }
+  }
+}
+
+.homepage-content {
+  .homepage-cta {
+    margin-bottom: 40px;
+    h2 {
+      text-align: center;
+    }
+    .cta-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .run-benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3em;
+    .benefit-img {
+      width: 50%;
+      margin: 0 auto;
+    }    
+    img {
+      width: 100%
+    }
+    h2 {
+      color: #ff0049;
+      text-align: center;
+      font-size: 1.4em;
+      padding-bottom: 0.4em;
+    }
+  }
+} //end .homepage-content
+
+.create-event {
+  padding-top: 3em;
+  a {
+    font-size: 2em;
+  }
+}
+
+/* ————————————————————
+    create-event.html
+——————————————————————— */
+
+.create-event {
+  h1 {
+    font-size: 2em;
+    padding-bottom: 1em;
+  }
+  .create-event-form {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    label {
+      padding-top: 1em;
+    }
+    input, textarea {
+      height: 30px;
+      padding: 0em 1em;
+      border: 2px solid pink;
+      border-radius: 7px;
+    }
+    textarea {
+      height: 60px;
+      padding: 1em;
+    }
+  }
+  .submit-form {
+    height: 70px;
+    background: linear-gradient(-216deg, #FFEB3B, #00BCD4);
+    box-shadow: 1px -4px 13px 4px #6388f5;
+    transition: all 0.2s ease-in-out;
+    padding: 0em 3em;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 3em;
+    text-shadow: -7px -2px 14px #db12fb;
+    &:hover {
+      background: linear-gradient(-166deg, #d0f312, #ff3ba2);
+      box-shadow: 8px -5px 20px 5px #2de20e;
+      transform: rotate(5deg);
+    }
+    &:active {
+      background: linear-gradient(-216deg, #00BCD4, #FFEB3B);
+      box-shadow: -4px 17px 20px 5px #e27c0e;
+      transform: rotate(10deg);
+    }
+  }
+}
+
+/* ————————————————————
+    event-template.html
+——————————————————————— */
+
+.event-details {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  .event-details-left {
+    .event-name {
+      font-size: 2em;
+      font-weight: 100;
+    }
+  }
+  .event-details-right {
+    > * {
+      padding-bottom: .6em;
+    }
+  }
+  .event-description {
+    padding-top: 2em;
+  }
+}
