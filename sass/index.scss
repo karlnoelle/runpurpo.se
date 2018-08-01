@@ -1,3 +1,12 @@
+/*——————————————————
+    VARIABLES
+——————————————————*/
+
+$color-red: #ff0049;
+$color-teal: #29b4ad;
+$color-white: #ffffff;
+
+
 html {
   font-family: "proxima-nova",sans-serif;
   .main-container {
@@ -34,12 +43,12 @@ html {
     font-weight: 100;
   }
   .homepage-module {
-    border: 3px solid #ff0049;
+    border: 3px solid $color-red;
     border-radius: 6px;
 
     .module-header {
-      background-color: #ff0049;
-      color: #fff;
+      background-color: $color-red;
+      color: $color-white;
       padding: 0.8em 1.2em;
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -93,7 +102,7 @@ html {
       width: 100%
     }
     h2 {
-      color: #ff0049;
+      color: $color-red;
       text-align: center;
       font-size: 1.4em;
       padding-bottom: 0.4em;
@@ -119,15 +128,22 @@ html {
   }
   .create-event-form {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    .input-field {
+      padding-bottom: 2em;
+    }
     label {
-      padding-top: 1em;
+      padding: 1em 0em .6em;
+      display: block;
     }
     input, textarea {
       height: 30px;
       padding: 0em 1em;
       border: 2px solid pink;
       border-radius: 7px;
+      &::-webkit-input-placeholder {
+        color: #cccccc;
+      }
     }
     textarea {
       height: 60px;
@@ -145,6 +161,7 @@ html {
     font-size: 1.1em;
     margin-top: 3em;
     text-shadow: -7px -2px 14px #db12fb;
+    cursor: pointer;
     &:hover {
       background: linear-gradient(-166deg, #d0f312, #ff3ba2);
       box-shadow: 8px -5px 20px 5px #2de20e;
@@ -163,20 +180,25 @@ html {
 ——————————————————————— */
 
 .event-details {
-  display: grid;
-  grid-template-columns: 75% 25%;
   .event-details-left {
     .event-name {
       font-size: 2em;
       font-weight: 100;
+      padding-bottom: 2em;
     }
   }
   .event-details-right {
+    display: grid;
+    grid-template-columns: 15% 25% 30% 30%;
     > * {
-      padding-bottom: .6em;
+      padding-bottom: 0.6em;
+      font-size: 1.2em;
+      font-weight: 100;
+      color: $color-red;
     }
   }
   .event-description {
     padding-top: 2em;
+    line-height: 1.2;
   }
 }

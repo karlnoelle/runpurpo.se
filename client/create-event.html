@@ -4,7 +4,8 @@
   <link type="text/css" rel="stylesheet" href="css/index.css">
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
-  <script src="common.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/create-event.js"></script>
 
   <link rel="stylesheet" href="https://use.typekit.net/xnd4fff.css">
 </head>
@@ -15,31 +16,31 @@
         <h1>Create running event</h1>
         
         <form class="create-event-form">
-            <div>
+            <div class="input-field event-name">
                 <label>Event Name</label>
-                <input placeholder="event name">
+                <input placeholder="event name"/>
             </div>
-            <div>
-                <label>Event Time</label>
-                <input placeholder="xx:xx">
-            </div>
-            <div>
+            <div class="input-field event-date">
                 <label>Event Date</label>
-                <input placeholder="mm/dd/yyyy">
+                <input placeholder="mm/dd/yyyy"/>
             </div>
-            <div>
+            <div class="input-field event-time">
+                <label>Event Time</label>
+                <input placeholder="xx:xx"/>
+            </div>
+            <div class="input-field event-location">
                 <label>Event Location</label>
-                <input placeholder="location">
+                <input placeholder="location"/>
             </div>
-            <div>
+            <div class="input-field event-address">
                 <label>Event Address</label>
-                <input placeholder="address">
+                <input placeholder="address"/>
             </div>
-            <div>
+            <div class="input-field event-description">
                 <label>Event Description</label>
                 <textarea placeholder="event description" rows="4"></textarea>
             </div>
         </form>
-        <button href="/event-template.html" class="submit-form">Make The Event Page!</button>
+         <button class="submit-form">Make The Event Page!</button>
     </div>
 </div>
