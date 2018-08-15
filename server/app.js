@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const process = require('process');
 const Strategy = require('passport-local').Strategy
-const app = express();
+global.app = express();
 var bodyParser = require('body-parser');
 
 var users = [
@@ -20,6 +20,7 @@ passport.use(new Strategy(
 ));
 
 app.use(bodyParser.json()); // for parsing application/json
+require('./events');
 
 app.use(express.static("client"));
 app.post('/login', passport.authenticate('local'));
@@ -31,12 +32,6 @@ app.get('/profile', function (request, response) {
     } else {
         response.redirect('/');
     }
-});
-app.post('/create-event', function (request, response) {
-    console.log('received event: ' + JSON.stringify(request.body));
-    // TODO: validation
-    // TODO: save --> id
-    response.sendStatus(201);
 });
 app.get('/event', function (request, response) {
 
@@ -51,6 +46,7 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
   // we're connected!
 });
+
 
 
 //listen for a connecion in the browser

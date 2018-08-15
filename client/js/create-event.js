@@ -7,7 +7,7 @@ $(function () {
         let time = $form.find('.event-time input').val();
         let location = $form.find('.event-location input').val();
         let address = $form.find('.event-address input').val();
-        let description = $form.find('.event-description input').val();
+        let description = $form.find('.event-description textarea').val();
         // Add validation, default values.
 
         let event = {
