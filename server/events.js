@@ -13,14 +13,13 @@ let eventSchema = new Schema({
 
 const Event = mongoose.model('event', eventSchema);
 
-app.post('/create-event', function (request, response) {
+app.post('/api/create-event', function (request, response) {
     console.log('received event: ' + JSON.stringify(request.body));
     // TODO: validation
-    // TODO: save --> id
     let event = new Event(request.body);
-    event.save(function(err) {
-        if (err) {
-            console.log(`unable to save event: ${err}`);
+    event.save(function(error) {
+        if (error) {
+            console.log(`unable to save event: ${error}`);
             response.sendStatus(500);
         } else {
             response.status(201).send(event);
@@ -28,13 +27,35 @@ app.post('/create-event', function (request, response) {
     });
 });
 
-app.get('/event/:eventID', function(request, response) {
-    let eventID = request.params.eventID;
-    Event.findById(eventID, function(err, result) {
-        if (err) {
-            response.sendStatus(404);
-        } else {
-            response.send(result);
-        }
+app.get('/api/events', function (request, response) {
+    let result = {};
+    Event.find({}, (err, events) => {
+        events.forEach((event) => {
+			console.log(`event = ${event}`);
+			result[event._id] = event;
+        });
+		response.send(result);
     });
+});
+
+app.get('/api/event/:eventID', function (request, response) {
+	let eventID = request.params.eventID;
+	Event.findById(eventID, function(err, result) {
+		if (err) {
+			response.sendStatus(404);
+		} else {
+			response.send(result);
+		}
+	});
+});
+
+app.get('/event/:eventID', function(request, response) {
+	let eventID = request.params.eventID;
+	Event.findById(eventID, function(err, result) {
+		if (err) {
+			response.sendStatus(404);
+		} else {
+			response.render('event-page', result);
+		}
+	});
 });

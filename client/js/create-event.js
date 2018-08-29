@@ -27,9 +27,9 @@ $(function () {
             method: 'POST',
             success: function(data, sStatus) {
                 // TODO: redirect.
-                alert('success!');
+                alert(`success! ${data._id}`);
             },
-            url: '/create-event',
+            url: '/api/create-event',
         });
     }
     $('button.submit-form').click(function(e) {

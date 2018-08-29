@@ -1,3 +1,5 @@
+const LISTEN_PORT = 3000;
+
 const express = require('express');
 const mongoose = require('mongoose');
 const passport = require('passport');
@@ -7,35 +9,32 @@ global.app = express();
 var bodyParser = require('body-parser');
 
 var users = [
-    {id: 1, username: 'rick', password: 'petty', displayName: 'rp', emails: [ { value: 'rp@aol.net'} ] }
+	{id: 1, username: 'rick', password: 'petty', displayName: 'rp', emails: [{value: 'rp@aol.net'}]}
 ];
 
 passport.use(new Strategy(
-    function(username, password, cb) {
-        if (username === 'rick' && password === 'petty') {
-            return cb(null, users [0]);
-        }
-        else cb(new Error('User ' + username + ' is erroring'));
-    }
+	function (username, password, cb) {
+		if (username === 'rick' && password === 'petty') {
+			return cb(null, users [0]);
+		}
+		else cb(new Error('User ' + username + ' is erroring'));
+	}
 ));
 
 app.use(bodyParser.json()); // for parsing application/json
+app.use(express.static("client"));
+
 require('./events');
 
-app.use(express.static("client"));
 app.post('/login', passport.authenticate('local'));
 app.get('/profile', function (request, response) {
-    // TODO: validate user
-    let valid = true;
-    if (valid) {
-    response.sendFile(process.cwd() + '/client/profile.html');
-    } else {
-        response.redirect('/');
-    }
-});
-app.get('/event', function (request, response) {
-
-    // TODO: load event from DB
+	// TODO: validate user
+	let valid = true;
+	if (valid) {
+		response.sendFile(process.cwd() + '/client/profile.html');
+	} else {
+		response.redirect('/');
+	}
 });
 
 // Open connection to MongoDB
@@ -43,10 +42,9 @@ mongoose.connect('mongodb://localhost/test');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function() {
-  // we're connected!
+db.once('open', function () {
+	// we're connected!
 });
-
 
 
 //listen for a connecion in the browser
