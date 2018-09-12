@@ -26,8 +26,11 @@ $(function () {
             },
             method: 'POST',
             success: function(data, sStatus) {
-                // TODO: redirect.
-                alert(`success! ${data._id}`);
+                if (data._id) {
+                    window.location = `/event/${data._id}`;
+                } else {
+                    alert(`no identifier found for this event`);
+                }
             },
             url: '/api/create-event',
         });

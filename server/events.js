@@ -51,11 +51,11 @@ app.get('/api/event/:eventID', function (request, response) {
 
 app.get('/event/:eventID', function(request, response) {
 	let eventID = request.params.eventID;
-	Event.findById(eventID, function(err, result) {
+	Event.findById(eventID, function(err, eventData) {
 		if (err) {
 			response.sendStatus(404);
 		} else {
-			response.render('event-page', result);
+			response.render('event', eventData);
 		}
 	});
 });

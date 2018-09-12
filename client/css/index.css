@@ -160,7 +160,7 @@ html .main-container {
 }
 
 /* ————————————————————
-    event-template.html
+    event.njk
 ——————————————————————— */
 .event-details .event-details-left .event-name {
   font-size: 2em;

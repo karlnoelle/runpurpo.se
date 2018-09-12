@@ -2,4 +2,5 @@
 .DS_Store
 .idea
 .vscode
+data
 node_modules
