@@ -1,30 +1,27 @@
-# Running for a Purpose Web App
+# RunpurposeAngular
 
-## Getting Started
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
-### Prerequisites
+## Development server
 
-- [Git](https://git-scm.com/)
-- [Node.js and npm](http://nodejs.org) Node >= 4.x.x, npm >= 2.x.x
-- [Gulp](http://gulpjs.com/) (`npm install --global gulp`)
-- [MongoDB](https://www.mongodb.org/) - Keep a running daemon with `mongod`
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-### Developing
+## Code scaffolding
 
-1. Run `npm install` to install server dependencies.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-2. Run `mongod` in a separate shell to keep an instance of the MongoDB Daemon running
+## Build
 
-3. Run `gulp serve` to start the development server. It should automatically open the client in your browser when ready.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Build & development
+## Running unit tests
 
-Run `gulp build` for building and `gulp serve` for preview.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Testing
+## Running end-to-end tests
 
-Running `npm test` will run the unit tests with karma.
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Keep running
+## Further help
 
-to feel great.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
