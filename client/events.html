@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<link type="text/css" rel="stylesheet" href="/css/reset.css">
+<link type="text/css" rel="stylesheet" href="/css/index.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+<script src="/js/common.js"></script>
+<script src="/node_modules/nunjucks/browser/nunjucks.js"></script>
+
+<link rel="stylesheet" href="https://use.typekit.net/xnd4fff.css">
+
+<div class="main-container">
+</div>
+
+<script type="text/nunjucks">
+{% for id, event in events %}
+<!--{% endfor %}-->
+<!--</script>-->
+
+<script>
+$(async () => {
+  const $script = $('script[type="text/nunjucks"]');
+  const templateString = $script.html();
+  const template = nunjucks.compile(templateString);
+
+    const eventsResponse = await fetch('/api/events');
+    const events = await eventsResponse.json();
+
+    const context = { events };
+    const rendered = template.render(context);
+    $('.main-container').html(rendered);
+
+    // const eventIDs = Object.keys(events);
+    // for (let eventID of eventIDs) {
+    //   const anEvent = events[eventID];
+    //   h.push('<a href="/event/', anEvent._id, '">', anEvent.name, '</a><br/>');
+    // }
+    // $('.main-container').html(h.join(''));
+});
+</script>

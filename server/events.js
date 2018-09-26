@@ -31,7 +31,6 @@ app.get('/api/events', function (request, response) {
     let result = {};
     Event.find({}, (err, events) => {
         events.forEach((event) => {
-			console.log(`event = ${event}`);
 			result[event._id] = event;
         });
 		response.send(result);

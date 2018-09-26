@@ -5,9 +5,12 @@ const express = require('express');
 const expressNunjucks = require('express-nunjucks');
 const mongoose = require('mongoose');
 const nunjucks  = require('nunjucks');
+const path = require('path');
 const passport = require('passport');
 const Strategy = require('passport-local').Strategy
 const process = require('process');
+
+const __baseDir = path.dirname(__dirname);
 
 global.app = express();
 
@@ -33,7 +36,7 @@ expressNunjucks(app, 'views', {
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(express.static("client"));
-
+app.use('/node_modules', express.static(`${__baseDir}/node_modules`));
 require('./events');
 
 app.post('/login', passport.authenticate('local'));
