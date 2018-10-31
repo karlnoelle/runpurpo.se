@@ -183,20 +183,48 @@ html .main-container {
 }
 
 /* EVENTS TEMPLATE */
-.main-container.events-page h1 {
+.events-page h1 {
   font-weight: 300;
 }
-.main-container.events-page .upcoming-events a {
+.events-page .upcoming-events a {
   text-decoration: none;
   color: #333;
   display: inline-block;
 }
-.main-container.events-page .past-events {
+.events-page .upcoming-events .upcoming-event {
+  display: grid;
+  grid-template-columns: 70px 100px 1fr 80px;
+  grid-gap: 2.8em;
+  align-items: center;
+  border: 2px solid #29beb7;
+  border-radius: 0.6em;
+  padding: 1em 1em 1em 1.6em;
+}
+.events-page .upcoming-events .upcoming-event h2 {
+  font-weight: 300;
+  margin: 0;
+}
+.events-page .upcoming-events .upcoming-event h2 a {
+  color: #ff0049;
+  text-decoration: none;
+}
+.events-page .upcoming-events .upcoming-event .upcoming-event-name h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.events-page .upcoming-events .upcoming-event .upcoming-event-name .address-label {
+  font-weight: 700;
+  margin: 0.8em 0em 0em 0em;
+}
+.events-page .upcoming-events .upcoming-event .upcoming-event-name p {
+  margin: 0;
+}
+.events-page .past-events {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1em;
 }
-.main-container.events-page .past-events .past-event {
+.events-page .past-events .past-event {
   display: grid;
   grid-template-columns: 50px 1fr;
   align-items: center;
@@ -205,7 +233,7 @@ html .main-container {
   min-height: 6.4em;
   padding: 0.8em;
 }
-.main-container.events-page .past-events .past-event p {
+.events-page .past-events .past-event p {
   margin: 0em;
   font-size: 1em;
 }
