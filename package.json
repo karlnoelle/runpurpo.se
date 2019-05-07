@@ -16,5 +16,8 @@
     "next": "^8.0.4",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-react-svg": "^1.0.1"
   }
 }
