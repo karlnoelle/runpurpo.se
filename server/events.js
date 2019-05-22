@@ -7,7 +7,7 @@ utils.mkdirs(EVENT_DIR);
 
 const loadEvents = () => {
 	const events = {};
-	fs.readDirSync(EVENT_DIR).forEach(filename => {
+	fs.readdirSync(EVENT_DIR).forEach(filename => {
 		const content = fs.readFileSync(EVENT_DIR + '/' + filename, 'utf8');
 		const event = JSON.parse(content);
 		events[event.id] = event;
@@ -31,14 +31,15 @@ app.post('/api/event', (req, res) => {
 	} else {
 		const uuid = uuidv1();
 		event.id = uuid;
-		fs.writeFileSync(EVENT_DIR + uuid + '.json', JSON.stringify(event));
+		fs.writeFileSync(EVENT_DIR + '/' + uuid + '.json', JSON.stringify(event));
 		res.status(201).send(event);
 	}
 });
 
 // Load an event
 app.get('/api/event/:eventId', (req, res) => {
-	const event = loadEvents()[req.params.eventId];
+	const events = loadEvents();
+	const event = events[req.params.eventId];
 	if (event) {
 		res.json(event);
 	} else {

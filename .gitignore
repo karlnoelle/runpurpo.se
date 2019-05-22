@@ -1,6 +1,8 @@
 .next
+data
 node_modules
 
 # IDEA / IntelliJ
 .idea
 *.iml
+

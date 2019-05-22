@@ -5,8 +5,10 @@ exports.mkdir = (path) => {
 		fs.mkdirSync(path);
 	}
 };
-exports.mkdirs = (paths) => {
-	for (const path of paths.split('/')) {
+exports.mkdirs = (path) => {
+	const paths = path.split('/');
+	for (let i = 0; i < paths.length; i++) {
+		const path = paths.slice(0, i + 1).join('/');
 		exports.mkdir(path);
 	}
 };

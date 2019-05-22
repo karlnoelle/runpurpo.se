@@ -11,6 +11,6 @@ const Common = props => (
     <Header />
     {props.children}
   </div>
-)
+);
 
 export default Common
