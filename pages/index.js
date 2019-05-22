@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
-import Header from '../components/Header'
+import Common from '../components/Common'
 
 const Index = () => (
     <div>
-        <Header />
+        <Common />
         <p>Hello Next.js</p>
     </div>
   )

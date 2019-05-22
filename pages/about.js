@@ -1,10 +1,10 @@
-import Header from '../components/Header'
+import Common from '../components/Common'
 
 export default function About() {
     return (
       <div>
-        <Header />
-        <p>This is the about page</p>
+        <Common />
+        <p>This is the about page. Things about running.</p>
       </div>
     )
 }
