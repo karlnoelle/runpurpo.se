@@ -5,12 +5,8 @@ exports.mkdir = (path) => {
 		fs.mkdirSync(path);
 	}
 };
-exports.mkdirs = (...paths) => {
-	if (Array.isArray(paths)) {
-		for (const path of paths) {
-			exports.mkdir(path);
-		}
-	} else {
-		exports.mkdirs(paths.split('/'));
+exports.mkdirs = (paths) => {
+	for (const path of paths.split('/')) {
+		exports.mkdir(path);
 	}
 };
