@@ -29,8 +29,9 @@ class CreateEventForm extends React.Component {
     event.preventDefault();
     const response = await fetch(`${BASE_URL}/api/event`, {
         method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(this.state)
-    })
+    });
     const eventJson = await response.json();
     this.props.router.push('/events')
   }
@@ -61,7 +62,7 @@ class CreateEventForm extends React.Component {
             </div>
             <div className="input-field event-description">
                 <label>Event Description</label>
-                <textarea placeholder="event description" rows="4" value={this.state.description} onChange={this.handleChange} name="description"></textarea>
+                <textarea placeholder="event description" rows="4" onChange={this.handleChange} name="description">{this.state.description}</textarea>
             </div>
             <button className="submit-form" type="submit">Make The Event Page!</button>
             </form>

@@ -12,7 +12,7 @@ const Events = (props) => {
 			<p>Events List!</p>
 			<p>
 				{ eventList.map((eventProps) =>
-					( <EventListItem { ...eventProps } /> )
+					( <EventListItem key={ eventProps.id } { ...eventProps } /> )
 				)}
 			</p>
 		</div>
