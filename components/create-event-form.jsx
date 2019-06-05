@@ -62,7 +62,7 @@ class CreateEventForm extends React.Component {
             </div>
             <div className="input-field event-description">
                 <label>Event Description</label>
-                <textarea placeholder="event description" rows="4" onChange={this.handleChange} name="description">{this.state.description}</textarea>
+                <textarea placeholder="event description" rows="4" value={this.state.description} onChange={this.handleChange} name="description"></textarea>
             </div>
             <button className="submit-form" type="submit">Make The Event Page!</button>
             </form>
