@@ -9,12 +9,20 @@ const Events = (props) => {
 	return (
 		<div>
 			<Common/>
-			<p>Events List!</p>
-			<p>
+			<h3>Events List</h3>
+			<div className="events-container">
 				{ eventList.map((eventProps) =>
 					( <EventListItem key={ eventProps.id } { ...eventProps } /> )
 				)}
-			</p>
+			</div>
+
+			<style jsx>{`
+				.events-container {
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr;
+					grid-gap: 1em;
+				}
+			`}</style>
 		</div>
 	);
 };
