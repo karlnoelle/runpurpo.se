@@ -2,10 +2,10 @@ export default function EventListItem(props) {
 	return (
 		<>
 			<div className="single-event">
-				<span>{props.date}</span>
+				<span className="event-date">{props.date}</span>
 				<div className="event-info">
-					<span className="event-detail">{props.name}</span>
-					<span>{props.location}</span>
+					<span className="event-name">{props.name}</span>
+					<span className="event-location">{props.location}</span>
 				</div>
 			</div>
 
@@ -23,8 +23,17 @@ export default function EventListItem(props) {
 					padding: .4rem;
 				}
 
+				.event-date {
+					font-weight: 700;
+				}
+				
 				.event-info {
-					font-size: .6rem;
+					display: grid;
+					grid-gap: 0.3rem;
+				}
+
+				.event-location {
+					font-size: 0.6rem;
 				}
 			`}</style>
 		</>
