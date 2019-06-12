@@ -26,12 +26,13 @@ const Header = () => (
 
         header {
             border-bottom: 1px solid rgb(204, 204, 204);
-            padding: 1em;
+            padding: 1.6rem;
             display: grid;
-            grid-template-columns: 6em auto;
+            grid-template-columns: 9rem auto;
         }
         img {
-            width: 4rem;
+            width: 6rem;
+            cursor: pointer;
         }
 
         nav {
@@ -41,8 +42,15 @@ const Header = () => (
         nav a {
             font-size: 1.2rem;
             text-decoration: none;
-            margin-right: .4em;
+            margin-right: 1.4em;
             color: var(--green);
+            transition: all .12s ease-in-out;
+            border-bottom: 1px solid transparent;
+        }
+
+        nav a:hover {
+            color: var(--red);
+            border-bottom: 1px solid var(--red);
         }
         `}</style>
     </div>

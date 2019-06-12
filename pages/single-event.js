@@ -9,24 +9,9 @@ const Events = (props) => {
 	return (
 		<div>
 			<Common/>
-			<div className="main-container">
-				<h3>Events List</h3>
-				<div className="events-container">
-					{ eventList.map((eventProps) =>
-						( <EventListItem key={ eventProps.id } { ...eventProps } /> )
-						)}
-				</div>
-			</div>
+			<h3>{props.name}</h3>
+
 			<style jsx>{`
-				.main-container {
-					padding: 1.6em;
-				}
-
-				h3 {
-					font-size: 1.4rem;
-					padding-bottom: 1rem;
-				}
-
 				.events-container {
 					display: grid;
 					grid-template-columns: 1fr 1fr 1fr;
