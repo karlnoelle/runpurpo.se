@@ -33,7 +33,7 @@ class CreateEventForm extends React.Component {
         body: JSON.stringify(this.state)
     });
     const eventJson = await response.json();
-    this.props.router.push('/events')
+    this.props.router.push(`/event/${eventJson.id}`)
   }
 
   render() {

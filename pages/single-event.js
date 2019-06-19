@@ -1,15 +1,16 @@
 import fetch from 'isomorphic-unfetch'
 import Common from '../components/Common'
-import EventListItem from '../components/event-list-item'
+import Link from 'next/link';
+import EventItem from '../components/event-item'
 
 const BASE_URL = 'http://localhost:3000';
 
-const Events = (props) => {
-	const eventList = Object.keys(props.events).map(key => props.events[key]);
+const Event = (props) => {
+	const event = props.event;
 	return (
 		<div>
 			<Common/>
-			<h3>{props.name}</h3>
+			<EventItem {...event}></EventItem>
 
 			<style jsx>{`
 				.events-container {
@@ -22,11 +23,12 @@ const Events = (props) => {
 	);
 };
 
-Events.getInitialProps = async () => {
+Event.getInitialProps = async ({ query }) => {
 	// TODO: error handling
-	const response = await fetch(`${BASE_URL}/api/events`);
-	const events = await response.json();
-	return { events };
+	const eventId = query.eventId;
+	const response = await fetch(`${BASE_URL}/api/event/${eventId}`);
+	const event = await response.json();
+	return { event };
 };
 
-export default Events
+export default Event

@@ -1,13 +1,17 @@
+import Link from 'next/link'
+
 export default function EventListItem(props) {
 	return (
 		<>
-			<div className="single-event">
-				<span className="event-date">{props.date}</span>
-				<div className="event-info">
-					<span className="event-name">{props.name}</span>
-					<span className="event-location">{props.location}</span>
+			<Link href="/">
+				<div className="single-event">
+					<span className="event-date">{props.date}</span>
+					<div className="event-info">
+						<span className="event-name">{props.name}</span>
+						<span className="event-location">{props.location}</span>
+					</div>
 				</div>
-			</div>
+			</Link>
 
 			<style jsx>{`
 				--green: #29b2ab;

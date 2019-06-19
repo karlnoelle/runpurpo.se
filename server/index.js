@@ -7,7 +7,8 @@ const handle = nextApp.getRequestHandler();
 
 nextApp.prepare().then(() => {
 	global.app = express();
-	require('./routes');
+	const routes = require('./routes');
+	app.use(routes.getRequestHandler(nextApp));
 
 	// Route to handle all the React stuff.
 	app.get('*', (req,res) => handle(req,res));
