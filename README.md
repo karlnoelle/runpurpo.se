@@ -21,10 +21,6 @@
 
 6. Start coding!
 
-## Build & development
-
-Current working branch is named `nextjs` which is a fresh start and complete re-write from what is in `master`. Create a new branch off of the latest commit in `nextjs` when building new features.
-
 ## Keep running
 
 to feel great.
