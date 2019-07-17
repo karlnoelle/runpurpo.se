@@ -1,9 +1,10 @@
 import Link from 'next/link'
 
 export default function EventListItem(props) {
+	const href = `/event/${props.id}`;
 	return (
 		<>
-			<Link href="/">
+			<Link href={href}>
 				<div className="single-event">
 					<span className="event-date">{props.date}</span>
 					<div className="event-info">
