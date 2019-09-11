@@ -7,11 +7,9 @@ export default function EventItem(props) {
 						<h1 className="event-name">{props.name}</h1>
 					</div>
 					<div className="event-details">
-						<h2>{props.date}</h2>
+						<h3>{props.time} &bull; {props.date}</h3>
+						<h3>{props.location}</h3>
 						<p>{props.address}</p>
-					</div>
-					<div>
-						<span className="event-location">{props.location}</span> &bull;	<span>{props.time}</span>
 					</div>
 				</div>
 				<p>{props.description}</p>

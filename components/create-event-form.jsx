@@ -40,32 +40,50 @@ class CreateEventForm extends React.Component {
     return (
         <div>
             <form className="create-event-form" onSubmit={this.handleSubmit}>
-            <div className="input-field event-name">
-                <label>Event Name</label>
-                <input placeholder="event name" value={this.state.name} onChange={this.handleChange} name="name"/>
-            </div>
-            <div className="input-field event-date">
-                <label>Event Date</label>
-                <input placeholder="mm/dd/yyyy" value={this.state.date} onChange={this.handleChange} name="date"/>
-            </div>
-            <div className="input-field event-time">
-                <label>Event Time</label>
-                <input placeholder="xx:xx" value={this.state.time} onChange={this.handleChange} name="time"/>
-            </div>
-            <div className="input-field event-location">
-                <label>Event Location</label>
-                <input placeholder="location" value={this.state.location} onChange={this.handleChange} name="location"/>
-            </div>
-            <div className="input-field event-address">
-                <label>Event Address</label>
-                <input placeholder="address" value={this.state.address} onChange={this.handleChange} name="address"/>
-            </div>
-            <div className="input-field event-description">
-                <label>Event Description</label>
-                <textarea placeholder="event description" rows="4" value={this.state.description} onChange={this.handleChange} name="description"></textarea>
-            </div>
+              <div className="event-form">
+                <div className="input-field event-name">
+                    <label>Event Name</label>
+                    <input placeholder="event name" value={this.state.name} onChange={this.handleChange} name="name"/>
+                </div>
+                <div className="input-field event-date">
+                    <label>Event Date</label>
+                    <input placeholder="mm/dd/yyyy" value={this.state.date} onChange={this.handleChange} name="date"/>
+                </div>
+                <div className="input-field event-time">
+                    <label>Event Time</label>
+                    <input placeholder="xx:xx" value={this.state.time} onChange={this.handleChange} name="time"/>
+                </div>
+                <div className="input-field event-location">
+                    <label>Event Location</label>
+                    <input placeholder="location" value={this.state.location} onChange={this.handleChange} name="location"/>
+                </div>
+                <div className="input-field event-address">
+                    <label>Event Address</label>
+                    <input placeholder="address" value={this.state.address} onChange={this.handleChange} name="address"/>
+                </div>
+                <div className="input-field event-description">
+                    <label>Event Description</label>
+                    <textarea placeholder="event description" rows="4" value={this.state.description} onChange={this.handleChange} name="description"></textarea>
+                </div>
+              </div>
             <button className="submit-form" type="submit">Make The Event Page!</button>
             </form>
+
+            <style jsx>{`
+            .event-form {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .input-field {
+              display: grid;
+              width: 75%;
+            }
+
+            button {
+              margin-top: 3rem;
+            }
+            `}</style>
         </div>
     );
   }

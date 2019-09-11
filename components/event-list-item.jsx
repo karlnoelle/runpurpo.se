@@ -26,6 +26,7 @@ export default function EventListItem(props) {
 					grid-template-columns: 5em 1fr;
 					align-items: center;
 					padding: .4rem;
+					cursor: pointer;
 				}
 
 				.event-date {
