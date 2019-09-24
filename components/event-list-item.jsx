@@ -27,6 +27,17 @@ export default function EventListItem(props) {
 					align-items: center;
 					padding: .4rem;
 					cursor: pointer;
+					transition: all .14s ease-in-out;
+				}
+				
+				.single-event:hover {
+					border-radius: 1em;
+					box-shadow: 2px 2px 0px var(--green);
+				}
+				
+				.single-event:hover .event-date {
+					transform: rotate(8deg);
+					transition: all .3s ease-in-out;
 				}
 
 				.event-date {

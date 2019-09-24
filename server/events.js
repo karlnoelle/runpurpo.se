@@ -49,3 +49,8 @@ app.get('/api/event/:eventId', (req, res) => {
 
 // List all events
 app.get('/api/events', (req, res) => res.json(loadEvents()));
+
+// TODO Delete event
+app.get('/api/event/:eventID', (req, res) => {
+	const events = loadEvents();
+});

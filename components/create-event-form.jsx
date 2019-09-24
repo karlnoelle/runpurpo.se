@@ -73,11 +73,16 @@ class CreateEventForm extends React.Component {
             .event-form {
               display: grid;
               grid-template-columns: 1fr 1fr 1fr;
+              grid-gap: 2em 0em;
             }
 
             .input-field {
               display: grid;
               width: 75%;
+            }
+
+            .input-field input, .input-field textarea {
+              border: 1px solid rgb(255, 192, 203);
             }
 
             button {
