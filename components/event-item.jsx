@@ -13,6 +13,8 @@ export default function EventItem(props) {
 					</div>
 				</div>
 				<p>{props.description}</p>
+				<a href="#"><h2>delete me</h2></a>
+				<a href="#"><h2>edit me</h2></a>
 			</div>
 
 			<style jsx>{`
