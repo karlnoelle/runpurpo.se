@@ -2,6 +2,8 @@ const fs = require('fs');
 const utils = require('./utils');
 const uuidv1 = require('uuid/v1');
 
+const EVENT_ID_INVALID_REGEX = /[^\w-]/;
+
 const EVENT_DIR = './data/events';
 utils.mkdirs(EVENT_DIR);
 
@@ -21,7 +23,7 @@ const validateEvent = (event) => {
 	}
 };
 
-// Create an event
+// Create or edit an event
 app.post('/api/event', (req, res) => {
 	const event = req.body;
 	console.log(`received event: ${JSON.stringify(event)}`);
@@ -29,9 +31,15 @@ app.post('/api/event', (req, res) => {
 	if (validationError) {
 		res.status(400).send(validationError);
 	} else {
-		const uuid = uuidv1();
-		event.id = uuid;
-		fs.writeFileSync(EVENT_DIR + '/' + uuid + '.json', JSON.stringify(event));
+		if (event.id) {
+			if (event.id.match(EVENT_ID_INVALID_REGEX)) {
+				res.status(400).send('400 Bad Request\nInvalid character in event ID');
+				return;
+			}
+		} else {
+			event.id = uuidv1();
+		}
+		fs.writeFileSync(EVENT_DIR + '/' + event.id + '.json', JSON.stringify(event));
 		res.status(201).send(event);
 	}
 });
@@ -50,7 +58,18 @@ app.get('/api/event/:eventId', (req, res) => {
 // List all events
 app.get('/api/events', (req, res) => res.json(loadEvents()));
 
-// TODO Delete event
-app.get('/api/event/:eventID', (req, res) => {
-	const events = loadEvents();
+// Delete an event
+app.delete('/api/event/:eventID', (req, res) => {
+	const eventID = req.params.eventID;
+	if (eventID.match(EVENT_ID_INVALID_REGEX)) {
+		res.status(400).send('400 Bad Request\nInvalid character in event ID');
+	} else {
+		try {
+			fs.unlinkSync(EVENT_DIR + '/' + eventID + '.json');
+		} catch (e) {
+			res.status(404).send(e.message);
+			return;
+		}
+		res.status(200).send('200 Deleted');
+	}
 });

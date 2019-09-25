@@ -1,4 +1,20 @@
-export default function EventItem(props) {
+import fetch from 'isomorphic-unfetch'
+import { withRouter } from 'next/router'
+
+const BASE_URL = 'http://localhost:3000';
+
+export function EventItem(props) {
+	const handleDelete = async (e) => {
+		e.preventDefault();
+		const response = await fetch(`${BASE_URL}/api/event/${props.id}`, {
+			method: 'DELETE',
+		});
+		console.log('DELETE ' + response.status + response.statusText);
+		if (response.ok) {
+			props.router.push('/events');
+		}
+	};
+
 	return (
 		<>
 			<div className="single-event">
@@ -13,7 +29,7 @@ export default function EventItem(props) {
 					</div>
 				</div>
 				<p>{props.description}</p>
-				<a href="#"><h2>delete me</h2></a>
+				<button onClick={handleDelete}>delete me</button>
 				<a href="#"><h2>edit me</h2></a>
 			</div>
 
@@ -38,3 +54,5 @@ export default function EventItem(props) {
 		</>
 	)
 }
+
+export default withRouter(EventItem)
