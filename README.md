@@ -5,25 +5,21 @@
 ### Prerequisites
 
 - [Git](https://git-scm.com/)
-- [Node.js and npm](http://nodejs.org) Node >= 4.x.x, npm >= 2.x.x
-- [Gulp](http://gulpjs.com/) (`npm install --global gulp`)
-- [MongoDB](https://www.mongodb.org/) - Keep a running daemon with `mongod`
+- [Node.js and npm](http://nodejs.org) Node >= 10.4.x, npm >= 6.1.x
 
-### Developing
+### Contributing
 
-1. Run `npm install` to install server dependencies.
+1. Clone the repo with `git clone https://github.com/karlnoelle/runpurpo.se.git`
 
-2. Run `mongod` in a separate shell to keep an instance of the MongoDB Daemon running
+2. Navigate to the cloned folder with `cd runpurpo.se`
 
-3. Run `gulp serve` to start the development server. It should automatically open the client in your browser when ready.
+3. Run `npm install` to install server dependencies.
 
-## Build & development
+4. Run `npm start` and wait for nextjs to show `runpurpo.se ready at http://localhost:3000`
 
-Run `gulp build` for building and `gulp serve` for preview.
+5. Open `http://localhost:3000` in a browser window to view the app.
 
-## Testing
-
-Running `npm test` will run the unit tests with karma.
+6. Start coding!
 
 ## Keep running
 
