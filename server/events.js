@@ -1,21 +1,35 @@
 const fs = require('fs');
 const utils = require('./utils');
 const uuidv1 = require('uuid/v1');
+const data = require('data');
 
 const EVENT_ID_INVALID_REGEX = /[^\w-]/;
 
 const EVENT_DIR = './data/events';
 utils.mkdirs(EVENT_DIR);
 
-const loadEvents = () => {
-	const events = {};
-	fs.readdirSync(EVENT_DIR).forEach(filename => {
-		const content = fs.readFileSync(EVENT_DIR + '/' + filename, 'utf8');
-		const event = JSON.parse(content);
-		events[event.id] = event;
-	});
-	return events;
-};
+// This function exists in data.js, named loadAllEvents();
+// const loadEvents = () => {
+// 	const events = {};
+// 	fs.readdirSync(EVENT_DIR).forEach(filename => {
+// 		const content = fs.readFileSync(EVENT_DIR + '/' + filename, 'utf8');
+// 		const event = JSON.parse(content);
+// 		events[event.id] = event;
+// 	});
+// 	return events;
+// };
+
+// Load an event from filesystem
+app.get('/api/event/:eventId', (req, res) => {
+	const loadAllEvents = data(); // assign variable to data.js file
+	const events = loadAllEvents(); // assign variable to the function called in data.js
+	const event = events[req.params.eventId];
+	if (event) {
+		res.json(event);
+	} else {
+		res.sendStatus(404);
+	}
+});
 
 const validateEvent = (event) => {
 	if (!event.name) {
@@ -41,17 +55,6 @@ app.post('/api/event', (req, res) => {
 		}
 		fs.writeFileSync(EVENT_DIR + '/' + event.id + '.json', JSON.stringify(event));
 		res.status(201).send(event);
-	}
-});
-
-// Load an event
-app.get('/api/event/:eventId', (req, res) => {
-	const events = loadEvents();
-	const event = events[req.params.eventId];
-	if (event) {
-		res.json(event);
-	} else {
-		res.sendStatus(404);
 	}
 });
 
