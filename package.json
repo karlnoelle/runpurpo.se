@@ -1,32 +1,31 @@
 {
   "name": "runpurpose",
   "version": "1.0.0",
-  "description": "A Minneapolis running community.",
-  "main": "./server/app.js",
-  "dependencies": {
-    "express": "^4.16.3",
-    "express-nunjucks": "^2.2.3",
-    "mongo": "^0.1.0",
-    "mongoose": "^5.2.5",
-    "nunjucks": "^3.1.3",
-    "passport": "^0.4.0",
-    "passport-facebook": "^2.1.1",
-    "passport-local": "^1.0.0"
-  },
-  "devDependencies": {},
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "mongo": "data/bin/mongod -f data/mongod.conf",
-    "start-old": "node server/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "node server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/karlnoelle/runpurpo.se.git"
-  },
-  "author": "Karl Noelle",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/karlnoelle/runpurpo.se/issues"
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^8.1.0",
+    "next-routes": "^1.4.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "uuid": "^3.3.2"
   },
-  "homepage": "https://github.com/karlnoelle/runpurpo.se#readme"
+  "optionalDependencies": {
+    "@babel/runtime-corejs2": "^7.4.4"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-react-svg": "^1.1.0"
+  }
 }
