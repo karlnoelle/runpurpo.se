@@ -1,4 +1,8 @@
 const fs = require('fs');
+const utils = require('./utils');
+
+const EVENT_DIR = './data/events';
+utils.mkdirs(EVENT_DIR);
 
 const loadAllEvents = () => {
     const events = {};
@@ -9,3 +13,5 @@ const loadAllEvents = () => {
     });
     return events;
 };
+
+module.exports = { loadAllEvents };
