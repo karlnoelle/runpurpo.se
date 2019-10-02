@@ -1,6 +1,7 @@
 const fs = require('fs');
 const uuidv1 = require('uuid/v1');
 const data = require('./data');
+const EVENT_DIR = './data/events';
 
 const EVENT_ID_INVALID_REGEX = /[^\w-]/;
 
