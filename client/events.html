@@ -3,18 +3,40 @@
 <link type="text/css" rel="stylesheet" href="/css/index.css">
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
-<script src="/js/common.js"></script>
+<script src="js/common.js"></script>
 <script src="/node_modules/nunjucks/browser/nunjucks.js"></script>
 
 <link rel="stylesheet" href="https://use.typekit.net/xnd4fff.css">
 
-<div class="main-container">
+
+
+<h1>Past Events</h1>
+<div class="main-container events-page">
+  <div class="header"></div>
 </div>
 
 <script type="text/nunjucks">
+<section class="past-events">
 {% for id, event in events %}
-<!--{% endfor %}-->
-<!--</script>-->
+<div class="past-event">
+  <p> {{ event.date }} </p>
+  <div class="past-event-name">
+    <p> {{ event.name }} </p>
+  </div>
+</div>
+
+
+<div>
+  <span> {{ event._id }} </span>
+  <span> {{ event.time }} </span>
+  <span> {{ event.address }} </span>
+  <span> {{ event.location }} </span>
+  <span> {{ event.description }} </span>
+</div>
+
+{% endfor %}
+</section>
+</script>
 
 <script>
 $(async () => {

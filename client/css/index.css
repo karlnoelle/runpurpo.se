@@ -182,4 +182,32 @@ html .main-container {
   line-height: 1.2;
 }
 
+/* EVENTS TEMPLATE */
+.main-container.events-page h1 {
+  font-weight: 300;
+}
+.main-container.events-page .upcoming-events a {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+}
+.main-container.events-page .past-events {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+.main-container.events-page .past-events .past-event {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  border: 2px solid #848787;
+  border-radius: 0.6em;
+  min-height: 6.4em;
+  padding: 0.8em;
+}
+.main-container.events-page .past-events .past-event p {
+  margin: 0em;
+  font-size: 1em;
+}
+
 /*# sourceMappingURL=index.css.map */
