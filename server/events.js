@@ -21,7 +21,7 @@ utils.mkdirs(EVENT_DIR);
 
 // Load an event from filesystem
 app.get('/api/event/:eventId', (req, res) => {
-	const loadAllEvents = data(); // assign variable to data.js file
+	const loadAllEvents = data; // assign variable to data.js file
 	const events = loadAllEvents(); // assign variable to the function called in data.js
 	const event = events[req.params.eventId];
 	if (event) {
