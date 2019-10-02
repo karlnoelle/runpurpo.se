@@ -1,28 +1,13 @@
 const fs = require('fs');
-const utils = require('./utils');
 const uuidv1 = require('uuid/v1');
-const data = require('data');
+const data = require('./data');
+const EVENT_DIR = './data/events';
 
 const EVENT_ID_INVALID_REGEX = /[^\w-]/;
 
-const EVENT_DIR = './data/events';
-utils.mkdirs(EVENT_DIR);
-
-// This function exists in data.js, named loadAllEvents();
-// const loadEvents = () => {
-// 	const events = {};
-// 	fs.readdirSync(EVENT_DIR).forEach(filename => {
-// 		const content = fs.readFileSync(EVENT_DIR + '/' + filename, 'utf8');
-// 		const event = JSON.parse(content);
-// 		events[event.id] = event;
-// 	});
-// 	return events;
-// };
-
 // Load an event from filesystem
 app.get('/api/event/:eventId', (req, res) => {
-	const loadAllEvents = data; // assign variable to data.js file
-	const events = loadAllEvents(); // assign variable to the function called in data.js
+	const events = data.loadAllEvents();
 	const event = events[req.params.eventId];
 	if (event) {
 		res.json(event);
@@ -59,7 +44,10 @@ app.post('/api/event', (req, res) => {
 });
 
 // List all events
-app.get('/api/events', (req, res) => res.json(loadEvents()));
+app.get('/api/events', (req, res) => {
+	const events = data.loadAllEvents();
+	res.json(events)
+});
 
 // Delete an event
 app.delete('/api/event/:eventID', (req, res) => {
