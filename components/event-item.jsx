@@ -9,7 +9,7 @@ export function EventItem(props) {
 		const response = await fetch(`${BASE_URL}/api/event/${props.id}`, {
 			method: 'DELETE',
 		});
-		console.log('DELETE ' + response.status + response.statusText);
+		console.log('DELETE ' + response.status + ' ' + response.statusText);
 		if (response.ok) {
 			props.router.push('/events');
 		}
