@@ -1,7 +1,5 @@
-const fs = require('fs');
 const uuidv1 = require('uuid/v1');
 const data = require('./data');
-const EVENT_DIR = './data/events';
 
 const EVENT_ID_INVALID_REGEX = /[^\w-]/;
 
@@ -38,7 +36,7 @@ app.post('/api/event', (req, res) => {
 		} else {
 			event.id = uuidv1();
 		}
-		fs.writeFileSync(EVENT_DIR + '/' + event.id + '.json', JSON.stringify(event));
+		data.saveEvent(event);
 		res.status(201).send(event);
 	}
 });
@@ -56,7 +54,7 @@ app.delete('/api/event/:eventID', (req, res) => {
 		res.status(400).send('400 Bad Request\nInvalid character in event ID');
 	} else {
 		try {
-			fs.unlinkSync(EVENT_DIR + '/' + eventID + '.json');
+			data.deleteEvent(eventID);
 		} catch (e) {
 			res.status(404).send(e.message);
 			return;
