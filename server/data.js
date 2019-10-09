@@ -22,4 +22,8 @@ const loadAllEvents = () => {
     return events;
 };
 
-module.exports = { loadAllEvents, saveEvent, deleteEvent };
+module.exports = {
+    deleteEvent,
+    loadAllEvents,
+    saveEvent,
+};
