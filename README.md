@@ -1,6 +1,6 @@
 # Running for a Purpose Web App
 
-## Getting Started
+## Getting Started with NextJS
 
 ### Prerequisites
 
