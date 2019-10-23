@@ -7,8 +7,10 @@ jest.mock('./utils', () => ({
 }));
 
 jest.mock('fs', () => ({
+	readdirSync: jest.fn(),
+	readFileSync: jest.fn(),
 	unlinkSync: jest.fn(),
-	writeFileSync: jest.fn(),
+	writeFileSync: jest.fn()
 }));
 
 test('utils.mkdirs was called correctly', () => {
@@ -27,9 +29,29 @@ test('saveEvent', () => {
 	const savedEvent = JSON.parse(fs.writeFileSync.mock.calls[0][1]);
 	expect(savedEvent).toEqual(event);
 });
+
 test('deleteEvent', () => {
 	const eventID = 'my-event-identifier';
 	data.deleteEvent(eventID);
 	expect(fs.unlinkSync).toHaveBeenCalledTimes(1);
 	expect(fs.unlinkSync).toBeCalledWith('./data/events/my-event-identifier.json');
+});
+
+test('loadAllEvents - empty directory', () => {
+	fs.readdirSync.mockReturnValue([]);
+	const result = data.loadAllEvents();
+	expect(fs.readdirSync).toHaveBeenCalledWith(data.EVENT_DIR);
+	expect(result).toEqual({});
+});
+
+test('loadAllEvents - more than one event', () => {
+	fs.readdirSync.mockReturnValue(['string 1', 'string 2', 'string 3']);
+	fs.readFileSync.mockImplementation(
+		(path, options) => {}
+
+
+	)
+	const result = data.loadAllEvents();
+	expect(fs.readdirSync).toHaveBeenCalledTimes(3);
+	expect(result).toEqual({})
 });

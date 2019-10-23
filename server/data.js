@@ -24,6 +24,7 @@ const loadAllEvents = () => {
 
 module.exports = {
     deleteEvent,
+    EVENT_DIR,
     loadAllEvents,
     saveEvent,
 };
