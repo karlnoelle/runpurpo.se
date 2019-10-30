@@ -7,7 +7,7 @@ const Index = () => (
     <div>
 			<Common />
       <div className="main-container">
-			<p>Let's Create an Event</p>
+			<h3>Let's Create an Event</h3>
 			<CreateEventForm />
 
       </div>

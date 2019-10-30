@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import Common from '../components/Common'
 
 const Index = () => (
@@ -33,10 +31,30 @@ const Index = () => (
                     </div>
                 </div>
             </div>
-            
-            <Link href="/create-event">
-                <a className="create-event">Create Event</a>
-            </Link>
+
+            <div className="run-benefits">
+                <div className="passion">
+                    <div class="benefit-img">
+                        <img src="../static/assets/img/passion-icon.png" />
+                    </div>
+                    <h2>Passionate Runners</h2>
+                    <p>Everyone has their own reasons for running, but the unifying layer beneath it all is Passion. We believe putting 100% into something yields the most rewarding experiences. Run with Purpose!</p>
+                </div>
+                <div className="community">
+                    <div class="benefit-img">
+                        <img src="../static/assets/img/community-icon.png" />
+                    </div>
+                    <h2>Building Community</h2>
+                    <p>Everyone has their own reasons for running, but the unifying layer beneath it all is Passion. We believe putting 100% into something yields the most rewarding experiences. Run with Purpose!</p>
+                </div>
+                <div className="coffee">
+                    <div class="benefit-img">
+                        <img src="../static/assets/img/coffee-icon.png" />
+                    </div>
+                    <h2>Coffee Addicts</h2>
+                    <p>Everyone has their own reasons for running, but the unifying layer beneath it all is Passion. We believe putting 100% into something yields the most rewarding experiences. Run with Purpose!</p>
+                </div>
+            </div>
         </div>
 
         <style jsx>{`
@@ -100,31 +118,14 @@ const Index = () => (
                 padding-top: 1rem;
             }
 
-            .create-event {
-                background: linear-gradient(-216deg, #FFEB3B, #00BCD4);
-                box-shadow: 1px -4px 13px 4px #6388f5;
-                transition: all 0.2s ease-in-out;
-                padding: 1em 3em;
-                color: white;
-                font-weight: bold;
-                font-size: 1.1em;
-                text-shadow: -7px -2px 14px #db12fb;
-                cursor: pointer;
-                border-radius: 0.8rem;
-                text-decoration: none;
-                display: inline-block;
+            .run-benefits {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 2em;
             }
 
-            .create-event:hover {
-                background: linear-gradient(-166deg, #d0f312, #ff3ba2);
-                box-shadow: 8px -5px 20px 5px #2de20e;
-                transform: rotate(5deg);
-            }
-
-            .create-event:active {
-                background: linear-gradient(-216deg, #00BCD4, #FFEB3B);
-                box-shadow: -4px 17px 20px 5px #e27c0e;
-                transform: rotate(10deg);
+            .run-benefits p {
+                line-height: 1.4;
             }
         `}</style>
     </div>
