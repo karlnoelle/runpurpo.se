@@ -13,9 +13,11 @@ const Events = (props) => {
 			<div className="main-container">
 				<div className="events-header">
 					<h3>Events List</h3>
-					<Link href="/create-event">
-						<a className="create-event">Create Event</a>
-					</Link>
+					<div className="create-event-link">
+						<Link href="/create-event">
+							<a className="create-event">Create Event</a>
+						</Link>
+					</div>
 				</div>
 				<div className="events-container">
 					{ eventList.map((eventProps) =>
@@ -36,10 +38,12 @@ const Events = (props) => {
 				.events-header {
 					display: grid;
 					grid-template-columns: 1fr 1fr;
+					margin-bottom: 1rem;
 				}
 				  
-				.events-header .create-event {
+				.events-header .create-event-link {
 					justify-self: end;
+					align-self: center;
 				}
 
 				.create-event {
