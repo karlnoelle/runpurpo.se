@@ -34,21 +34,21 @@ const Index = () => (
 
             <div className="run-benefits">
                 <div className="passion">
-                    <div class="benefit-img">
+                    <div className="benefit-img">
                         <img src="../static/assets/img/passion-icon.png" />
                     </div>
                     <h2>Passionate Runners</h2>
                     <p>Everyone has their own reasons for running, but the unifying layer beneath it all is Passion. We believe putting 100% into something yields the most rewarding experiences. Run with Purpose!</p>
                 </div>
                 <div className="community">
-                    <div class="benefit-img">
+                    <div className="benefit-img">
                         <img src="../static/assets/img/community-icon.png" />
                     </div>
                     <h2>Building Community</h2>
                     <p>Everyone has their own reasons for running, but the unifying layer beneath it all is Passion. We believe putting 100% into something yields the most rewarding experiences. Run with Purpose!</p>
                 </div>
                 <div className="coffee">
-                    <div class="benefit-img">
+                    <div className="benefit-img">
                         <img src="../static/assets/img/coffee-icon.png" />
                     </div>
                     <h2>Coffee Addicts</h2>

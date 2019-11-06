@@ -1,6 +1,5 @@
 import fetch from 'isomorphic-unfetch'
 import Common from '../components/Common'
-import Link from 'next/link';
 import EventItem from '../components/event-item'
 
 const BASE_URL = 'http://localhost:3000';

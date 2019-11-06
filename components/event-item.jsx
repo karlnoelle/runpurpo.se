@@ -15,6 +15,12 @@ export function EventItem(props) {
 		}
 	};
 
+	const handleEdit = async (e) => {
+		e.preventDefault();
+		const response = await fetch('${BASE_URL}/api/event/${props.id}', {
+			method: 'UPDATE',
+		})
+	}
 	return (
 		<>
 			<div className="single-event">
@@ -30,7 +36,7 @@ export function EventItem(props) {
 				</div>
 				<p>{props.description}</p>
 				<button onClick={handleDelete}>delete me</button>
-				<a href="#"><h2>edit me</h2></a>
+				<button href="#"><h2>edit me</h2></button>
 			</div>
 
 			<style jsx>{`
