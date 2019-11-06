@@ -51,7 +51,12 @@ test('loadAllEvents - more than one event', () => {
 
 
 	)
+	const expectedResult = {};
 	const result = data.loadAllEvents();
-	expect(fs.readdirSync).toHaveBeenCalledTimes(3);
-	expect(result).toEqual({})
+	expect(fs.readdirSync).toBeCalledWith(data.EVENT_DIR);
+	expect(fs.readFileSync).toHaveBeenCalledTimes(3);
+	expect(fs.readFileSync).toHaveBeenCalledWith(data.EVENT_DIR + '/string 1', 'utf8')
+	expect(fs.readFileSync).toHaveBeenCalledWith(data.EVENT_DIR + '/string 2', 'utf8')
+	expect(fs.readFileSync).toHaveBeenCalledWith(data.EVENT_DIR + '/string 3', 'utf8')
+	expect(result).toEqual(expectedResult);
 });
