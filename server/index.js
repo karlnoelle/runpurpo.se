@@ -1,7 +1,13 @@
 const express = require('express');
 const next = require('next');
 const PORT = process.env.PORT || 3000;
-const dev = process.env.NODE_DEV !== 'production';
+const deployEnvironment = process.env.NODE_ENV || 'dev';
+global.baseURL = (deployEnvironment === 'production')
+	? 'https://runpurpo.se'
+	: (deployEnvironment === 'test')
+		? 'http://test.runpurpo.se'
+		: `http://localhost:${PORT}`;
+const dev = deployEnvironment !== 'production';
 const nextApp = next({ dev });
 const handle = nextApp.getRequestHandler();
 
@@ -14,6 +20,6 @@ nextApp.prepare().then(() => {
 	app.get('*', (req,res) => handle(req,res));
 	app.listen(PORT, err => {
 		if (err) { throw err; }
-		console.log(`runpurpo.se ready at http://localhost:${PORT}`)
+		console.log(`runpurpo.se ready at ${baseURL}`);
 	});
 });
