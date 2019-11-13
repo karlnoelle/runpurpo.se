@@ -6,6 +6,9 @@ const BASE_URL = 'http://localhost:3000';
 class EventForm extends React.Component {
   constructor(props) {
     super(props);
+
+    console.log(props);
+
     this.state = {
         name: "",
         location: "",

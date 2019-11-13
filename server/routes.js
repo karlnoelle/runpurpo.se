@@ -7,4 +7,5 @@ require('./events');
 
 const routes = require('next-routes');
 module.exports = routes()
-.add('/event/:eventId', 'single-event');
+.add('/event/:eventId', 'single-event')
+.add('/edit-event/:eventId', 'edit-event');

@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-unfetch'
 import { withRouter } from 'next/router'
+import Link from 'next/link'
 
 const BASE_URL = 'http://localhost:3000';
 
@@ -15,12 +16,8 @@ export function EventItem(props) {
 		}
 	};
 
-	const handleEdit = async (e) => {
-		e.preventDefault();
-		const response = await fetch('${BASE_URL}/api/event/${props.id}', {
-			method: 'UPDATE',
-		})
-	}
+	const href = `/edit-event/${props.id}`;
+
 	return (
 		<>
 			<div className="single-event">
@@ -36,7 +33,9 @@ export function EventItem(props) {
 				</div>
 				<p>{props.description}</p>
 				<button onClick={handleDelete}>delete me</button>
-				<button href="#"><h2>edit me</h2></button>
+				<Link href={href}>
+					<button ><h2>edit me</h2></button>
+				</Link>
 			</div>
 
 			<style jsx>{`
