@@ -14,7 +14,7 @@ const Events = (props) => {
 				<div className="events-header">
 					<h3>Events List</h3>
 					<div className="create-event-link">
-						<Link href="/create-event">
+						<Link href="/edit-event">
 							<a className="create-event">Create Event</a>
 						</Link>
 					</div>

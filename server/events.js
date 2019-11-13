@@ -3,7 +3,7 @@ const data = require('./data');
 const utils = require('./utils');
 
 const EVENT_ID_INVALID_REGEX = /[^\w-]/;
-const EVENT_IMAGE_MAX_SIZE = 10_000_000;
+const EVENT_IMAGE_MAX_SIZE = 10000000;
 
 // Load an event from filesystem
 app.get('/api/event/:eventId', (req, res) => {

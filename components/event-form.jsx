@@ -3,7 +3,7 @@ import { withRouter } from 'next/router'
 
 const BASE_URL = 'http://localhost:3000';
 
-class CreateEventForm extends React.Component {
+class EventForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -39,7 +39,7 @@ class CreateEventForm extends React.Component {
   render() {
     return (
         <div>
-            <form className="create-event-form" onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit}>
               <div className="event-form">
                 <div className="input-field event-name">
                     <label>Event Name</label>
@@ -94,4 +94,4 @@ class CreateEventForm extends React.Component {
   }
 }
 
-export default withRouter(CreateEventForm);
+export default withRouter(EventForm);

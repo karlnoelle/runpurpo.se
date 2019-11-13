@@ -1,12 +1,12 @@
 import Common from '../components/Common'
-import CreateEventForm from '../components/create-event-form'
+import EventForm from '../components/event-form'
 
 const Index = () => (
     <div>
 			<Common />
       <div className="main-container">
         <h3>Let's Create an Event</h3>
-        <CreateEventForm />
+        <EventForm />
       </div>
 
       <style jsx>{`
