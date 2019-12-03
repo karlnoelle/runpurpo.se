@@ -34,12 +34,20 @@ const saveEventImage = (event, inStream) => {
 };
 
 const deleteEvent = (eventID) => {
-    fs.unlinkSync(`${EVENT_DIR}/${eventID}.jpg`);
-    fs.unlinkSync(`${EVENT_DIR}/${eventID}.png`);
+    try {
+        fs.unlinkSync(`${EVENT_DIR}/${eventID}.jpg`);
+    } catch (e) {
+        // ignore
+    }
+    try {
+        fs.unlinkSync(`${EVENT_DIR}/${eventID}.png`);
+    } catch (e) {
+        // ignore
+    }
     fs.unlinkSync(`${EVENT_DIR}/${eventID}.json`);
 };
 const deleteEventImage = (event) => {
-    const suffix = event.photoType;
+    const suffix = event.imageType;
     if (suffix) {
         fs.unlinkSync(`${EVENT_DIR}/${event._id}.${suffix}`);
     }

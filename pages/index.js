@@ -6,7 +6,7 @@ const Index = () => (
         <div className="main-container">
             <div className="home-intro">
                 <h1>Running for a Purpose is a weekly running club in Minneapolis</h1>
-                
+
                 <div className="event-module">
                     <div className="module-title">
                         <h3>Next Event</h3>
@@ -108,7 +108,7 @@ const Index = () => (
             .event-details p {
                 margin: 0;
             }
-            
+
             .event-details h4 {
                 margin: 0;
                 padding-bottom: 0.4rem;
@@ -131,5 +131,5 @@ const Index = () => (
     </div>
 
   )
-  
+
   export default Index
