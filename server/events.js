@@ -76,7 +76,7 @@ app.put('/api/event/:eventID/image', (req, res) => {
 				try {
 					data.saveEventImage(event, req);
 					req.on('error', (e) => res.status(400).send(e));
-					req.on('end', () => res.status(200));
+					req.on('end', () => res.sendStatus(200));
 				} catch (e) {
 					res.status(400).send(e);
 				}

@@ -3,12 +3,12 @@ import EventForm from '../components/event-form'
 
 const BASE_URL = 'http://localhost:3000';
 
-const Index = () => (
+const Index = (props) => (
     <div>
 			<Common />
       <div className="main-container">
-        <h3>Let's Create an Event</h3>
-        <EventForm />
+        <h3>Let's Create or Edit an Event</h3>
+        <EventForm event={props.event} />
       </div>
 
       <style jsx>{`

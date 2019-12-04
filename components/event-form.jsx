@@ -6,16 +6,15 @@ const BASE_URL = 'http://localhost:3000';
 class EventForm extends React.Component {
   constructor(props) {
     super(props);
-
-    console.log(props);
+    const event = props.event || {};
 
     this.state = {
-        name: "",
-        location: "",
-        address: "",
-        date: "",
-        time: "",
-        description: "",
+        name: event.name || "",
+        location: event.location || "",
+        address: event.address || "",
+        date: event.date || "",
+        time: event.time || "",
+        description: event.description || "",
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -24,7 +23,11 @@ class EventForm extends React.Component {
 
   handleChange(event) {
     const fieldName = event.target.name;
-    this.setState({[fieldName]: event.target.value});
+    if (fieldName === 'image') {
+      this.setState({ imageFile: event.target.files[0] })
+    } else {
+      this.setState({[fieldName]: event.target.value});
+    }
   }
 
   async handleSubmit(event) {
@@ -36,7 +39,15 @@ class EventForm extends React.Component {
         body: JSON.stringify(this.state)
     });
     const eventJson = await response.json();
-    this.props.router.push(`/event/${eventJson.id}`)
+    if (this.state.imageFile) {
+      const body = this.state.imageFile.stream();
+      await fetch(`${BASE_URL}/api/event/${eventJson.id}/image`, {
+        method: 'PUT',
+        body,
+      });
+    }
+    console.log(event)
+    //this.props.router.push(`/event/${eventJson.id}`)
   }
 
   render() {
@@ -67,6 +78,10 @@ class EventForm extends React.Component {
                 <div className="input-field event-description">
                     <label>Event Description</label>
                     <textarea placeholder="event description" rows="4" value={this.state.description} onChange={this.handleChange} name="description"></textarea>
+                </div>
+                <div className="input-field">
+                  <p>Select an image:</p>
+                  <input type="file" name="image" onChange={this.handleChange} />
                 </div>
               </div>
             <button className="submit-form" type="submit">Make The Event Page!</button>

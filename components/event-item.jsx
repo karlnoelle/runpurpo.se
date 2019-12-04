@@ -17,6 +17,7 @@ export function EventItem(props) {
 	};
 
 	const href = `/edit-event/${props.id}`;
+	//const imgSrc = `./data/events/${image}`
 
 	return (
 		<>
@@ -32,7 +33,8 @@ export function EventItem(props) {
 					</div>
 				</div>
 				<p>{props.description}</p>
-				<button onClick={handleDelete}>delete me</button>
+{/* 				<img src={imgSrc} />
+ */}				<button onClick={handleDelete}>delete me</button>
 				<Link href={href}>
 					<button ><h2>edit me</h2></button>
 				</Link>
