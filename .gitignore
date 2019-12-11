@@ -1,7 +1,11 @@
 .next
+favicon.*
 data
 keys.json
+logs
 node_modules
+public
+tmp
 
 # IDEA / IntelliJ
 .idea
