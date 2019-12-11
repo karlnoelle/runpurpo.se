@@ -84,7 +84,7 @@ class EventForm extends React.Component {
                   <input type="file" name="image" onChange={this.handleChange} />
                 </div>
               </div>
-            <button className="submit-form" type="submit">Make The Event Page!</button>
+            <button className="submit-form" type="submit">Make the Event Page!</button>
             </form>
 
             <style jsx>{`
@@ -109,6 +109,14 @@ class EventForm extends React.Component {
               border-radius: 0.4rem;
               height: 2rem;
               padding: 0.4rem .8rem;
+              transition: all 0.14s ease-in-out;
+            }
+
+            .input-field input:focus, .input-field textarea:focus {
+              box-shadow: 0 0 .6rem rgba(255, 0, 73, 0.6);
+              border: 1px solid var(--red);
+              outline: none;
+              outline-offset: 0px;
             }
 
             .input-field textarea {
@@ -126,6 +134,17 @@ class EventForm extends React.Component {
 
             .input-field input[type="file"] {
               border: none;
+              padding: 0;
+              height: auto;
+            }
+
+            .input-field input[type="file" i]::-webkit-file-upload-button {
+              background: var(--green);
+              border: 3px solid white;
+              border-radius: 0.4rem;
+              color: white;
+              padding: 0.8em 2em;
+              font-weight: 600;
             }
 
             button {
@@ -140,6 +159,12 @@ class EventForm extends React.Component {
               border-radius: 0.4rem;
               text-decoration: none;
               display: inline-block;
+            }
+
+            button:hover {
+              color: var(--green);
+              background: none;
+              border: 3px solid var(--green);
             }
             `}</style>
         </div>
