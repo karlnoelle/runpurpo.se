@@ -88,23 +88,58 @@ class EventForm extends React.Component {
             </form>
 
             <style jsx>{`
+            --green: #29b2ab;
+            --red: #ff0049;
+            --gray: rgb(86, 86, 86);
+
             .event-form {
               display: grid;
-              grid-template-columns: 1fr 1fr 1fr;
-              grid-gap: 2em 0em;
+              grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+              gap: 2em;
             }
 
             .input-field {
               display: grid;
               width: 75%;
+              grid-template-rows: 0fr 1fr;
             }
 
-            .input-field input, .input-field textarea {
-              border: 1px solid rgb(255, 192, 203);
+            .input-field input {
+              border: 1px solid var(--green);
+              border-radius: 0.4rem;
+              height: 2rem;
+              padding: 0.4rem .8rem;
+            }
+
+            .input-field textarea {
+              border: 1px solid var(--green);
+              border-radius: 0.4rem;
+              padding: 0.4rem .8rem;
+            }
+
+            .input-field label {
+              font-weight: 600;
+              font-size: 0.8rem;
+              margin-bottom: 0.4rem;
+              color: var(--gray);
+            }
+
+            .input-field input[type="file"] {
+              border: none;
             }
 
             button {
               margin-top: 3rem;
+              background: var(--green);
+              transition: all 0.2s ease-in-out;
+              border: 3px solid white;
+              padding: 0.8em 2em;
+              color: white;
+              font-weight: bold;
+              cursor: pointer;
+              border-radius: 0.4rem;
+              text-decoration: none;
+              display: inline-block;
             }
             `}</style>
         </div>

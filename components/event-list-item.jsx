@@ -28,6 +28,7 @@ export default function EventListItem(props) {
 					padding: .4rem;
 					cursor: pointer;
 					transition: all .14s ease-in-out;
+					gap: 1em;
 				}
 				
 				.single-event:hover {

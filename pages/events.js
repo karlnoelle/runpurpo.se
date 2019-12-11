@@ -26,6 +26,8 @@ const Events = (props) => {
 				</div>
 			</div>
 			<style jsx>{`
+				--green: #29b2ab;
+
 				.main-container {
 					padding: 1.6em;
 				}
@@ -47,30 +49,22 @@ const Events = (props) => {
 				}
 
 				.create-event {
-					background: linear-gradient(-216deg, #FFEB3B, #00BCD4);
-					box-shadow: 1px -4px 13px 4px #6388f5;
+					background: var(--green);
 					transition: all 0.2s ease-in-out;
-					padding: 1em 3em;
+					border: 3px solid white;
+					padding: 0.8em 2em;
 					color: white;
 					font-weight: bold;
-					font-size: 1.1em;
-					text-shadow: -7px -2px 14px #db12fb;
 					cursor: pointer;
-					border-radius: 0.8rem;
+					border-radius: 0.4rem;
 					text-decoration: none;
 					display: inline-block;
 				}
 	
 				.create-event:hover {
-					background: linear-gradient(-166deg, #d0f312, #ff3ba2);
-					box-shadow: 8px -5px 20px 5px #2de20e;
-					transform: rotate(5deg);
-				}
-	
-				.create-event:active {
-					background: linear-gradient(-216deg, #00BCD4, #FFEB3B);
-					box-shadow: -4px 17px 20px 5px #e27c0e;
-					transform: rotate(10deg);
+					background: none;
+					border: 3px solid var(--green);
+					color: var(--green);
 				}
 
 				.events-container {
